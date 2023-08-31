@@ -1,3 +1,8 @@
+*{
+  font-family: 'Nouvel', sans-serif;
+margin: 0;
+padding: 0;
+}
 @font-face {
   font-family: "Nouvel";
   src: url(NouvelR-Bold.otf);
@@ -6,19 +11,18 @@
   font-family: "Nouvelb";
   src: url(NouvelR-Extrabold.otf);
 }
-*{
-  font-family: 'Nouvel', sans-serif;
-margin: 0;
-padding: 0;
-}
 .alta{
   display: flex;
-  position: relative;
+  position: sticky;
+  top: 0px;
   flex-direction: row;
   height: 40px;
+  width: auto;
   background-color: black;
+  border-bottom: 1px solid white;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
 }
 .menu{
   margin-top: 10px;
@@ -36,39 +40,63 @@ padding: 0;
 .desplegable{
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: absolute;
   left: 0px;
   top: 2px;
-  transform: translateX(-120px);
+  transform: translateX(-400px);
   transform-origin: 0 0;
   transition: 0.5s;
   background-color: black;
   z-index: 1;
+  cursor: default;
+}
+.desplegable a:hover{
+  filter: opacity(0.5);
 }
 .menu:hover .desplegable{
   box-shadow: 100px 0px 1px 2000px rgba(0, 0, 0, 0.5);
   transform: translateX(0px);
   transform-origin: 0 0;
 }
+.gmap_canvas{
+  overflow: hidden;
+  background: none !important;
+  margin: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+}
 .alta img{
   margin-left: 2%;
   margin-right: 2%;
   height: 70%;
 }
+.redes{
+  display: flex;
+  flex-direction: row;
+  flex: 10px;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.redes img{
+  height: 30px;
+  width: 30px;
+}
 .bajoCabecera{
   position: sticky;
-  top: 0px;
+  top: 40px;
   height: auto;
+  width: auto;
   background-color: black;
-  border: 2px solid rgb(243, 222, 53);
-  box-shadow: 0px 5px 10px 1px black;
   margin-bottom: 20px;
 }
 .cabecera img{
   display: flex;
   justify-items: center;
   margin: auto;
-  width: 70%;
+  width: 80%;
   animation: cab 3s forwards;
 }
 .principal{
@@ -77,6 +105,7 @@ padding: 0;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 10px;
+  width: auto;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   column-gap: 30px;
   row-gap: 30px;
@@ -121,16 +150,25 @@ h3{
   text-align: center;
   margin-top: 5px;
 }
+h5{
+  font-family: "Nouvelb";
+  background-color: rgb(243, 222, 53);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 ul{
-  margin-left: 20px;
+  margin: 30px;
   line-height: 1.3;
 }
+
 a{
   color: white;
   text-decoration: none;
   text-align: left;
   position: relative;
-  margin: 5px;
+  margin: 1px;
   margin-left: 20px;
   margin-right: 20px;
 }
