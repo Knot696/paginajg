@@ -1,30 +1,35 @@
 *{
-  font-family: 'Nouvel', sans-serif;
+  font-family: 'Nouvelb', sans-serif;
 margin: 0;
 padding: 0;
 }
 @font-face {
   font-family: "Nouvel";
-  src: url(NouvelR-Bold.otf);
+  src: url(NouvelR-Book.otf);
 }
 @font-face {
   font-family: "Nouvelb";
+  src: url(NouvelR-Bold.otf);
+}
+@font-face {
+  font-family: "Nouvelxb";
   src: url(NouvelR-Extrabold.otf);
 }
-.alta{
+header{
   display: flex;
   position: sticky;
   top: 0px;
   flex-direction: row;
   height: 40px;
-  width: auto;
+  width: 100%;
+  margin: 0;
   background-color: black;
   border-bottom: 1px solid white;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
 }
-.menu{
+nav{
   margin-top: 10px;
   margin-left: 10px;
   cursor: pointer;
@@ -33,6 +38,7 @@ padding: 0;
 }
 .logo{
   margin-top: 10px;
+  margin-right: 10px;
   cursor: pointer;
   height: 45px;
   width: auto;
@@ -54,8 +60,8 @@ padding: 0;
 .desplegable a:hover{
   filter: opacity(0.5);
 }
-.menu:hover .desplegable{
-  box-shadow: 100px 0px 1px 2000px rgba(0, 0, 0, 0.5);
+nav:hover .desplegable{
+  box-shadow: 100px 0px 1px 2000px rgba(0, 0, 0, 0.8);
   transform: translateX(0px);
   transform-origin: 0 0;
 }
@@ -67,7 +73,7 @@ padding: 0;
   margin-bottom: 10px;
   width: 150px;
 }
-.alta img{
+header img{
   margin-left: 2%;
   margin-right: 2%;
   height: 70%;
@@ -88,7 +94,8 @@ padding: 0;
   position: sticky;
   top: 40px;
   height: auto;
-  width: auto;
+  width: 100%;
+  margin: 0;
   background-color: black;
   margin-bottom: 20px;
 }
@@ -99,37 +106,35 @@ padding: 0;
   width: 80%;
   animation: cab 3s forwards;
 }
-.principal{
+main{
   margin-bottom: 20px;
   display: grid;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 10px;
   width: auto;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   column-gap: 30px;
-  row-gap: 30px;
+  row-gap: 10px;
 }
-.acc{
+article{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.principal img{
+main img{
   width: 100%;
   height: auto;
   border-radius: 5px;
   box-shadow: 0px 0px 3px 1px black;
   transition: 0.3s;
-  margin-top: 30px;
 }
-.principal img:hover{
+main img:hover{
   box-shadow: 0px 0px 10px 2px black;
 }
 .wap img{
   position: fixed;
-  bottom: 15px;
+  bottom: 25px;
   right: 15px;
   height: 40px;
   width: 40px;
@@ -137,21 +142,27 @@ padding: 0;
   box-shadow: 2px 2px 5px 2px black;
   animation: wap 2s infinite;
 }
+footer{
+  background-color: black;
+  border: 15px solid black;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
 h2{
-  font-family: "Nouvelb";
+  font-family: "Nouvelxb";
   font-size: 30px;
   color: white;
   text-align: center;
   animation: cab 4s forwards;
 }
 h3{
-  font-family: "Nouvelb";
+  font-family: "Nouvelxb";
   font-size: 30px;
   text-align: center;
-  margin-top: 5px;
 }
 h5{
-  font-family: "Nouvelb";
+  font-family: "Nouvelxb";
   background-color: rgb(243, 222, 53);
   text-align: center;
   width: 100%;
@@ -160,17 +171,27 @@ h5{
 }
 ul{
   margin: 30px;
+  margin-top: 0px;
   line-height: 1.3;
 }
-
+h4{
+    margin: 30px;
+    margin-top: 0px;
+    line-height: 1.5;
+}
 a{
   color: white;
   text-decoration: none;
-  text-align: left;
   position: relative;
-  margin: 1px;
+  margin-top: 5px;
   margin-left: 20px;
   margin-right: 20px;
+}
+p{
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "nouvel";
 }
 @keyframes wap {
   0%{
