@@ -43,7 +43,7 @@ nav{
   height: 45px;
   width: auto;
 }
-.desplegable{
+#desplegable{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,13 +57,22 @@ nav{
   z-index: 1;
   cursor: default;
 }
-.desplegable a:hover{
+#desplegable a:hover{
   filter: opacity(0.5);
 }
-nav:hover .desplegable{
+#desplegable:target{
   box-shadow: 100px 0px 1px 2000px rgba(0, 0, 0, 0.8);
   transform: translateX(0px);
   transform-origin: 0 0;
+}
+.cierre{
+  display: flex;
+  align-items: center;
+  justify-items: right;
+  gap: 10px;
+}
+.cierre img{
+  height: 25px;
 }
 .gmap_canvas{
   overflow: hidden;
@@ -82,13 +91,13 @@ header img{
   display: flex;
   flex-direction: row;
   flex: 10px;
-  justify-content: space-around;
+  gap: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .redes img{
   height: 30px;
-  width: 30px;
+  width: auto;
 }
 .bajoCabecera{
   position: sticky;
@@ -184,8 +193,8 @@ a{
   text-decoration: none;
   position: relative;
   margin-top: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 p{
   color: white;
