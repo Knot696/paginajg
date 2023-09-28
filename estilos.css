@@ -1,8 +1,8 @@
 *{
   font-family: 'Nouvelb', sans-serif;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: "Nouvel";
@@ -54,14 +54,10 @@ header img{
   animation: cab 3s forwards;
 }
 .bajoCabecera{
-  position: sticky;
   top: 40px;
-  height: auto;
   width: 100%;
-  margin: 0;
   background-color: black;
   margin-bottom: 20px;
-  border-top: 1px solid white;
 }
 main{
   margin: 2%;
@@ -113,7 +109,6 @@ main img:hover{
   text-align: center;
   background-color: rgb(51, 204, 51);
   width: 200px;
-  height: 20px;
   margin: 0px;
   border-radius: 2px;
   border-top-right-radius: 10px;
@@ -127,6 +122,13 @@ footer{
   height: auto;
   width: auto;
   text-align: center;
+}
+.accordion{
+  width: 100%;
+  z-index: 0;
+}
+.accordion h2{
+  color: black;
 }
 h1{
   font-family: "Nouvelxb";
@@ -238,6 +240,7 @@ p{
     cursor: pointer;
     height: 35px;
     width: auto;
+    z-index: 1000;
   }
   .menu img{
     animation: menu 10s infinite;
@@ -255,7 +258,7 @@ p{
     transition: 0.5s;
   }
   #desplegable:target{
-    box-shadow: 100px 0px 1px 2000px rgba(0, 0, 0, 0.8);
+    box-shadow: 100vh 0px 1px 100vh rgba(0, 0, 0, 0.8);
     left: 0px;
   }
   .cierre{
@@ -299,6 +302,8 @@ p{
   .bajoCabecera{
     position: sticky;
     top: 50px;
+    z-index: 1;
+    border-top: 1px solid white;
   }
   .nav2{
     display: flex;
@@ -322,7 +327,7 @@ p{
     background-color: white;
     padding-left: 20px;
     padding-right: 20px;
-    z-index: 1;
+    z-index: 2;
     transition: 0.5s;
   }
   #ubicacion{
