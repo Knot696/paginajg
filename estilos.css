@@ -16,14 +16,14 @@
   font-family: "Nouvelxb";
   src: url(NouvelR-Extrabold.otf);
 }
+
 header{
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0px;
   flex-direction: row;
   height: 40px;
   width: 100%;
-  margin: 0;
   background-color: black;
   align-items: center;
   justify-content: space-between;
@@ -34,6 +34,61 @@ header img{
   margin-right: 2%;
   height: 70%;
 }
+nav{
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  height: 35px;
+  width: auto;
+}
+.menu img{
+  animation: menu 10s infinite;
+}
+#desplegable{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: -400px;
+  top: 0px;
+  background-color: black;
+  z-index: 1;
+  cursor: default;
+  transition: 0.5s;
+}
+#desplegable:target{
+  box-shadow: 100vh 0px 1px 100vh rgba(0, 0, 0, 0.8);
+  left: 0px;
+}
+.cierre{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cierre img{
+  margin: 10px;
+  height: 20px;
+}
+.gmap_canvas{
+  overflow: hidden;
+  background: none !important;
+  width: 95%;
+}
+.redes{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.redes img{
+  height: 30px;
+  width: auto;
+}
+.nav2{
+  display: none
+}
 .logo{
   margin-right: 5px;
   height: 30px;
@@ -43,6 +98,7 @@ header img{
   display: flex;
   justify-items: center;
   margin: auto;
+  margin-top: 40px;
   width: 80%;
   animation: cab 3s forwards;
 }
@@ -50,11 +106,11 @@ header img{
   display: flex;
   justify-items: center;
   margin: auto;
+  margin-top: 40px;
   width: 100%;
   animation: cab 3s forwards;
 }
 .bajoCabecera{
-  top: 40px;
   width: 100%;
   background-color: black;
   margin-bottom: 20px;
@@ -73,6 +129,13 @@ article{
   align-items: center;
   gap: 10px;
 }
+.valor{
+  display: flex;
+  justify-content: center;
+}
+.valor h3{
+  margin: 0%;
+}
 main img{
   width: 100%;
   height: auto;
@@ -82,6 +145,13 @@ main img{
 }
 main img:hover{
   box-shadow: 0px 0px 10px 2px black;
+}
+.accordion{
+  width: 100%;
+  z-index: 0;
+}
+.accordion h2{
+  color: black;
 }
 .wap img{
   height: 40px;
@@ -122,13 +192,6 @@ footer{
   height: auto;
   width: auto;
   text-align: center;
-}
-.accordion{
-  width: 100%;
-  z-index: 0;
-}
-.accordion h2{
-  color: black;
 }
 h1{
   font-family: "Nouvelxb";
@@ -233,64 +296,6 @@ p{
     transform: scale(100%);
   }
 }
-@media (max-width: 800px){
-  nav{
-    margin-top: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    height: 35px;
-    width: auto;
-    z-index: 1000;
-  }
-  .menu img{
-    animation: menu 10s infinite;
-  }
-  #desplegable{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: -400px;
-    top: 0px;
-    background-color: black;
-    z-index: 1;
-    cursor: default;
-    transition: 0.5s;
-  }
-  #desplegable:target{
-    box-shadow: 100vh 0px 1px 100vh rgba(0, 0, 0, 0.8);
-    left: 0px;
-  }
-  .cierre{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .cierre img{
-    margin: 10px;
-    height: 20px;
-  }
-  .gmap_canvas{
-    overflow: hidden;
-    background: none !important;
-    width: 95%;
-  }
-  .redes{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 20px;
-  }
-  .redes img{
-    height: 30px;
-    width: auto;
-  }
-  .nav2{
-    display: none
-  }
-}
 @media (min-width: 800px) {
   main{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -300,9 +305,7 @@ p{
     height: 50px;
   }
   .bajoCabecera{
-    position: sticky;
     top: 50px;
-    z-index: 1;
     border-top: 1px solid white;
   }
   .nav2{
@@ -329,6 +332,7 @@ p{
     padding-right: 20px;
     z-index: 2;
     transition: 0.5s;
+    border-bottom: 1px solid;
   }
   #ubicacion{
     display: flex;
@@ -345,6 +349,7 @@ p{
     padding-right: 20px;
     z-index: 1;
     transition: 0.5s;
+    border-bottom: 1px solid;
   }
   #vehiculos:target, #ubicacion:target, #redes:target{
     left: 0px;
@@ -362,7 +367,8 @@ p{
   }
   .gmap_canvas{
     overflow: hidden;
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     width: 50%;
     height: 100%;
   }
