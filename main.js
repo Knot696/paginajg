@@ -28,7 +28,7 @@ let botonCarrito = document.querySelector('.botonCarrito');
 let carrito = document.querySelector('.carrito');
 let cierreCarrito = document.querySelector('.cierreCarrito');
 let itemsCarrito = document.querySelector('.itemsCarrito');
-let totalCarrito = document.querySelector('.total');
+let totalCarrito = document.querySelector('.totalCarrito');
 let precioJaulaNegra = document.querySelector('.precioJaulaNegra');
 let precioJaulaCromada = document.querySelector('.precioJaulaCromada');
 
@@ -46,14 +46,13 @@ let total=0;
 
 //Agregar elementos al carrito
 botonJaulaNegra.addEventListener('click', ()=>{
-  total += parseInt(precioJaulaNegra.innerText);
-  console.log(total);
   let item = document.createElement('div');
   let imgItem = document.createElement('img');
   let eliminarItem = document.createElement('img');
   let info = document.createElement('div');
   let nombreItem = document.createElement('p')
   let precioItem = document.createElement('p')
+  let valor = document.createElement('h2')
   itemsCarrito.appendChild(item);
   item.appendChild(imgItem);
   item.appendChild(info);
@@ -65,6 +64,9 @@ botonJaulaNegra.addEventListener('click', ()=>{
   imgItem.classList.add('imgArt');
   nombreItem.innerText = 'Jaula Negra';
   precioItem.innerText = "$" + precioJaulaNegra.innerText;
+  total += parseInt(precioJaulaNegra.innerText);
+  totalCarrito.appendChild(valor);
+  valor.innerText = total;
   eliminarItem.classList.add('eliminarItems');
   eliminarItem.src = 'items/x.png';
   imgItem.src = 'alaskan/1.jpg';
@@ -72,4 +74,32 @@ botonJaulaNegra.addEventListener('click', ()=>{
     itemsCarrito.removeChild(item);
   })
 })
-
+botonJaulaCromada.addEventListener('click', ()=>{
+  let item = document.createElement('div');
+  let imgItem = document.createElement('img');
+  let eliminarItem = document.createElement('img');
+  let info = document.createElement('div');
+  let nombreItem = document.createElement('p')
+  let precioItem = document.createElement('p')
+  let valor = document.createElement('h2')
+  itemsCarrito.appendChild(item);
+  item.appendChild(imgItem);
+  item.appendChild(info);
+  info.appendChild(nombreItem);
+  info.appendChild(precioItem);
+  item.appendChild(eliminarItem);
+  info.classList.add('info');
+  item.classList.add('items');
+  imgItem.classList.add('imgArt');
+  nombreItem.innerText = 'Jaula Cromada';
+  precioItem.innerText = "$" + precioJaulaCromada.innerText;
+  total += parseInt(precioJaulaCromada.innerText);
+  totalCarrito.appendChild(valor);
+  valor = total;
+  eliminarItem.classList.add('eliminarItems');
+  eliminarItem.src = 'items/x.png';
+  imgItem.src = 'alaskan/2.jpg';
+  eliminarItem.addEventListener('click',()=>{
+    itemsCarrito.removeChild(item);
+  })
+})
