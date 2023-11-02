@@ -1,13 +1,20 @@
 .carrito{
+    display: none;
+    transition: 1s;
+  }
+  .carrito1{
     position: fixed;
     margin-left: 5%;
     margin-top: 5vh;
     width: 90%;
-    height: 88vh;
+    height: 85vh;
     background-color: white;
     z-index: 2;
     box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.8);
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
   }
   .itemsCarrito{
     width: 100%;
@@ -22,7 +29,7 @@
   }
   .baseCarrito{
     position: fixed;
-    bottom: 10px;
+    bottom: 15px;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -36,11 +43,6 @@
   .baseCarrito, h2{
     color:white;
   }
-  .carrito1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .cierreCarrito{
     margin-right: 10px;
     margin-top: 10px;
@@ -50,9 +52,15 @@
     cursor: pointer;
   }
   .botonCarrito{
-    width: 35px;
-    height: 35px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+  }
+  .contadorCarrito{
+    position: absolute;
+    top: 0px;
+    right: 13px;
   }
   .items{
     display: flex;
@@ -104,6 +112,8 @@
   }
   @media (min-width: 800px) {
     .botonCarrito{
-      top: 55px;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
     }
   }
