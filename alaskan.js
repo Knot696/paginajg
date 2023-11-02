@@ -68,7 +68,7 @@ cierreCarrito.addEventListener('click', ()=>{
     carrito.classList.remove('carrito1');
     carrito.classList.remove('desaparecer');
   }
-  setTimeout(borrar, 300);
+  setTimeout(borrar, 400);
 })
 
 let total=0;

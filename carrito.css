@@ -28,7 +28,7 @@
     padding-bottom: 100px;
   }
   .desaparecer{
-    animation: desaparecer 0.3s;
+    animation: desaparecer 0.4s;
   }
   .baseCarrito{
     position: fixed;
