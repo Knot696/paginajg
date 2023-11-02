@@ -1,9 +1,6 @@
   .carrito{
     display: none;
   }
-  .desaparecer{
-    animation: desaparecer 0.7s;
-  }
   .carrito1{
     position: fixed;
     margin-left: 5%;
@@ -29,6 +26,9 @@
     align-items: center;
     padding: 10px;
     padding-bottom: 100px;
+  }
+  .desaparecer{
+    animation: desaparecer 0.3s;
   }
   .baseCarrito{
     position: fixed;

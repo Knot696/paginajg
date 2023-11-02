@@ -58,12 +58,17 @@ let contador = document.querySelector('.contadorCarrito');
 
 //Apertura carrito
 botonCarrito.addEventListener('click', ()=>{
-  carrito.classList.add('carrito1')
+  carrito.classList.add('carrito1');
 })
 
 //Cierre carrito
 cierreCarrito.addEventListener('click', ()=>{
-  carrito.classList.remove('carrito1')
+  carrito.classList.add('desaparecer');
+  function borrar(){
+    carrito.classList.remove('carrito1');
+    carrito.classList.remove('desaparecer');
+  }
+  setTimeout(borrar, 300);
 })
 
 let total=0;
