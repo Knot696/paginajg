@@ -21,12 +21,12 @@
   </head>
   <body>
     <div class="carrito">
-      <h2>Carrito</h2>
       <img class="cierreCarrito" src="items\x1.png">
       <div class="itemsCarrito">
       </div>
-    <div class="totalCarrito">
+    <div class="baseCarrito">
       <h2>Total:</h2>
+      <h2 class="totalCarrito"></h2>
     </div>
     </div>
     <header>
@@ -56,6 +56,7 @@
         </div>
       </nav>
       <div class="nav2">
+        <img class="logo1" src="items\logo.png">
         <a href="index.html">ACCESORIOS COLOCADOS</a>
         <a href="#vehiculos">VEHÍCULOS</a>
         <div id="vehiculos">
@@ -82,9 +83,9 @@
         </div>
       </div>
       <img class="logo" src="items\logo.png">
+      <img class="botonCarrito" src="items\carrito.png"></div>
     </header>
     <img class="imgPresentacion" src="cabeceras\alaskan.jpg">
-    <img class="botonCarrito" src="items\carrito.png"></div>
     <div class="bajoCabecera"><h1>ACCESORIOS ALASKAN</h1></div>
     <main>
       <article>
@@ -105,13 +106,13 @@
                 </ul>
                 <div class="valor">
                   <h3>Valor: $</h3>
-                  <h3 class="precioJaulaNegra">345000</h3>
+                  <h3 class="precioJaulaNegra">10000</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonJaulaNegra">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonJaulaNegra">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\2.jpg">
@@ -131,13 +132,13 @@
                 </ul>
                 <div class="valor">
                   <h3>Valor: $</h3>
-                  <h3 class="precioJaulaCromada">45000</h3>
+                  <h3 class="precioJaulaCromada">20000</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonJaulaCromada">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonJaulaCromada">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\4.jpg">
@@ -145,7 +146,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>LONA</h2>
+                <h2>LONA MARITIMA</h2>
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -155,11 +156,15 @@
                   <li>Cierre con resorte.</li>
                   <li>Grampa de fijación con bulón oculto.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioLona">30000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonLona">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonLona">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\5.jpg">
@@ -176,11 +181,15 @@
                   <li>Plástico termoformado resistente al sol y productos químicos.</li>
                   <li>Textura antideslizante de fácil limpieza.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioCobertor">40000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonCobertor">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonCobertor">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\18.jpg">
@@ -197,11 +206,15 @@
                   <li>Acrilico resistente.</li>
                   <li>Adhesivo .</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioDeflector">50000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonDeflectores">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonDeflectores">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\19.jpg">
@@ -218,11 +231,15 @@
                   <li>Plástico termoformado resistente al sol y productos químicos.</li>
                   <li>Incluye kit limpiador de superficie para adhesivo.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioKitFender">60000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonFenders">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonFenders">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\20.jpg">
@@ -239,11 +256,15 @@
                   <li>Plástico termoformado resistente al sol y productos químicos.</li>
                   <li>Textura antideslizante de fácil limpieza.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioProteccion">70000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonProteccion">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonProteccion">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\22.jpg">
@@ -260,11 +281,15 @@
                   <li>Kit 4 tuercas de seguridad con llave especial.</li>
                   <li>Evita la manipulación de llantas con herramientas convencionales.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioTuercas">80000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonTuercas">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonTuercas">Agregar al carrito</button>
       </article>
       <article>
         <img src="genericos\pola.jpg">
@@ -281,11 +306,15 @@
                   <li>Polarizados comunes y de seguridad.</li>
                   <li>Laminas con tonalidad media y clara.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioPolarizado">90000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonPolarizados">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonPolarizados">Agregar al carrito</button>
       </article>
       <article>
         <img src="genericos\k8.jpg">
@@ -303,11 +332,15 @@
                   <li>Regulación de distancia de alerta.</li>
                   <li>Activa al colocar reversa.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioSensores">100000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonSensores">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonSensores">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\3.jpg">
@@ -325,11 +358,15 @@
                   <li>Terminación pulido espejo.</li>
                   <li>No sobrepasa la línea del paragolpes.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioTalampayaInox">110000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonTalampayaInox">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonTalampayaInox">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\6.jpg">
@@ -347,11 +384,15 @@
                   <li>Terminación pulido espejo.</li>
                   <li>No sobrepasa la línea del paragolpes.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioTalampayaNegra">120000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonTalampayaNegra">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonTalampayaNegra">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\8.jpg">
@@ -369,11 +410,15 @@
                   <li>Pintados negro con poliester en polvo.</li>
                   <li>Anclaje totalmente al chasis.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioEngancheHyper">130000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonEngancheHyper">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonEngancheHyper">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\14.jpg">
@@ -391,11 +436,15 @@
                   <li>Pintados negro con poliester en polvo.</li>
                   <li>Anclaje totalmente al chasis.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioEngancheReforzado">140000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonEngancheReforzado">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonEngancheReforzado">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\16.jpg">
@@ -412,11 +461,15 @@
                   <li>Bastidor de caño 40×40 x3,2 de espesor.</li>
                   <li>Pintados negro con poliéster en polvo.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioEngancheComun">150000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonEngancheComun">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonEngancheComun">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\9.jpg">
@@ -436,11 +489,15 @@
                   <li>Bulonería con tratamiento anticorrosión.</li>
                   <li>Laterales de chapa estampada.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioJaulaCañoDobleInox">160000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonJaulaCañoDobleInox">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonJaulaCañoDobleInox">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\11.jpg">
@@ -460,11 +517,15 @@
                   <li>Bulonería con tratamiento anticorrosión.</li>
                   <li>Laterales de chapa estampada.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioJaulaCañoDobleNegra">170000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonJaulaCañoDobleNegra">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonJaulaCañoDobleNegra">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\10.jpg">
@@ -484,11 +545,15 @@
                   <li>Bulonería con tratamiento anticorrosión.</li>
                   <li>Laterales de chapa estampada.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioJaulaCañoSimpleInox">180000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonJaulaCañoSimpleInox">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonJaulaCañoSimpleInox">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\12.jpg">
@@ -507,11 +572,15 @@
                   <li>Bulonería con tratamiento anticorrosión.</li>
                   <li>Laterales de chapa estampada.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioJaulaCañoSimpleNegra">190000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonJaulaCañoSimpleNegra">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonJaulaCañoSimpleNegra">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\13.jpg">
@@ -531,11 +600,15 @@
                   <li>Bulonería con tratamiento anticorrosión.</li>
                   <li>Laterales de chapa estampada.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioJaulaTrabajo">200000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonJaulaTrabajo">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonJaulaTrabajo">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\7.jpg">
@@ -553,11 +626,15 @@
                   <li>Pisaderas antideslizantes y punteras de inyección plástica.</li>
                   <li>Fijados al chasis.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioEstribosSimilOriginal">210000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="estribosSimilOriginal">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonEstribosSimilOriginal">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\15.jpg">
@@ -576,11 +653,15 @@
                   <li>Pisaderas antideslizantes y punteras de inyección plástica.</li>
                   <li>Fijados al chasis con soportes específicos.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioEstriboOval">220000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonEstriboOval">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonEstriboOval">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\17.jpg">
@@ -596,11 +677,15 @@
                 <ul>
                   <li>Cabezales de todo tipo y altura.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioCabezales">230000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonCabezales">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonCabezales">Agregar al carrito</button>
       </article>
       <article>
         <img src="alaskan\21.jpg">
@@ -618,11 +703,15 @@
                   <li>Resistente a las inclemencias del tiempo.</li>
                   <li>Fácil de operar en el uso diario.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioTapa">240000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonTapa">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonTapa">Agregar al carrito</button>
       </article>
       <article>
         <img src="genericos\kits.jpg">
@@ -641,11 +730,15 @@
                   <li>Botiquín.</li>
                   <li>Balizas reflectivas con base.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioKit">250000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="botonKit">Agregar</button>
+        <button type="button" id="botonAgregar" class="botonKit">Agregar al carrito</button>
       </article>
     </main>
     <div class="mensajew">
