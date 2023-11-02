@@ -128,9 +128,9 @@ botonJaulaCromada.addEventListener('click', ()=>{
 })
 botonLonaAlaskan.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioLona.innerText);
+  total+=parseInt(precioLonaAlaskan.innerText);
   elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioLona.innerText);
+    total-=parseInt(precioLonaAlaskan.innerText);
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'LONA MARITIMA';
@@ -150,9 +150,9 @@ botonCobertor.addEventListener('click', ()=>{
 })
 botonDeflectoresAlaskan.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioDeflector.innerText);
+  total+=parseInt(precioDeflectorAlaskan.innerText);
   elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioDeflector.innerText);
+    total-=parseInt(precioDeflectorAlaskan.innerText);
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'DEFLECTORES LLUVIA';
@@ -161,9 +161,9 @@ botonDeflectoresAlaskan.addEventListener('click', ()=>{
 })
 botonFendersAlaskan.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioKitFender.innerText);
+  total+=parseInt(precioKitFenderAlaskan.innerText);
   elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioKitFender.innerText);
+    total-=parseInt(precioKitFenderAlaskan.innerText);
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'FENDERS';
@@ -172,9 +172,9 @@ botonFendersAlaskan.addEventListener('click', ()=>{
 })
 botonProteccionAlaskan.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioProteccion.innerText);
+  total+=parseInt(precioProteccionAlaskan.innerText);
   elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioProteccion.innerText);
+    total-=parseInt(precioProteccionAlaskan.innerText);
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'PROTECCION FRONTAL';
@@ -289,7 +289,7 @@ botonJaulaCañoDobleNegra.addEventListener('click', ()=>{
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA CAÑO DOBLE NEGRA';
   elemento.precioItem.innerText = "$" + precioJaulaCañoDobleNegra.innerText;
-  elemento.imgItem.src = 'alaskan/12.jpg';
+  elemento.imgItem.src = 'alaskan/11.jpg';
 })
 botonJaulaCañoSimpleInox.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
@@ -322,7 +322,7 @@ botonJaulaCañoSimpleNegra.addEventListener('click', ()=>{
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA CAÑO SIMPLE NEGRA';
   elemento.precioItem.innerText = "$" + precioJaulaCañoSimpleNegra.innerText;
-  elemento.imgItem.src = 'alaskan/2.jpg';
+  elemento.imgItem.src = 'alaskan/12.jpg';
 })
 botonJaulaTrabajo.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));

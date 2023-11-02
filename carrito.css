@@ -1,6 +1,8 @@
-.carrito{
+  .carrito{
     display: none;
-    transition: 1s;
+  }
+  .desaparecer{
+    animation: desaparecer 0.7s;
   }
   .carrito1{
     position: fixed;
@@ -14,7 +16,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 1s;
+    transition: 0.5s;
+    animation: aparecer 0.3s;
   }
   .itemsCarrito{
     width: 100%;
@@ -29,7 +32,7 @@
   }
   .baseCarrito{
     position: fixed;
-    bottom: 15px;
+    bottom: 25px;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -110,10 +113,31 @@
     background-color: white;
     transition: 0.0s;
   }
+  @keyframes aparecer{
+    0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }
+  @keyframes desaparecer{
+    0%{
+      opacity: 100%;
+    }
+    100%{
+      opacity: 0%;
+    }
+  }
   @media (min-width: 800px) {
     .botonCarrito{
       width: 35px;
       height: 35px;
       cursor: pointer;
+    }
+    .contadorCarrito{
+      position: absolute;
+      top: 5px;
+      right: 15px;
     }
   }
