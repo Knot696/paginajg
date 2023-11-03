@@ -58,6 +58,8 @@ let contador = document.querySelector('.contadorCarrito');
 let realizarPedido = document.querySelector('.realizarPedido');
 let formulario = document.querySelector('.formulario');
 let cierreFormulario = document.querySelector('.cierreFormulario');
+let inputAccesorioOculto = document.querySelector('.inputAccesorioOculto');
+let inputMontoOculto = document.querySelector('.inputMontoOculto');
 
 //Apertura carrito
 botonCarrito.addEventListener('click', ()=>{
@@ -115,10 +117,12 @@ class Items{
     this.eliminarItem.classList.add('eliminarItems');
     this.eliminarItem.src = 'items/x.png';
     totalCarrito.innerText = '$'+total;
+    inputMontoOculto.value = totalCarrito.innerText;
     contador.innerText=contadorCarrito += 1;
     this.eliminarItem.addEventListener('click',()=>{
       itemsCarrito.removeChild(this.item);
       totalCarrito.innerText = '$'+total;
+      inputMontoOculto.value = totalCarrito.innerText;
       contador.innerText= contadorCarrito -= 1;
     })
   }
@@ -129,8 +133,10 @@ class Items{
 botonJaulaNegra.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioJaulaNegra.innerText);
+  inputAccesorioOculto.value += ' +JAULA NEGRA+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioJaulaNegra.innerText);
+    inputAccesorioOculto.value += ' -JAULA NEGRA- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA NEGRA';
@@ -140,8 +146,10 @@ botonJaulaNegra.addEventListener('click', ()=>{
 botonJaulaCromada.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioJaulaCromada.innerText);
+  inputAccesorioOculto.value += ' +JAULA CROMADA+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioJaulaCromada.innerText);
+    inputAccesorioOculto.value += ' -JAULA CROMADA- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA CROMADA';
@@ -151,8 +159,10 @@ botonJaulaCromada.addEventListener('click', ()=>{
 botonLonaAlaskan.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioLonaAlaskan.innerText);
+  inputAccesorioOculto.value += ' +LONA+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioLonaAlaskan.innerText);
+    inputAccesorioOculto.value += ' -LONA- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'LONA MARITIMA';
@@ -162,8 +172,10 @@ botonLonaAlaskan.addEventListener('click', ()=>{
 botonCobertor.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioCobertor.innerText);
+  inputAccesorioOculto.value += ' +COBERTOR+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioCobertor.innerText);
+    inputAccesorioOculto.value += ' -COBERTOR- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'COBERTOR';
@@ -173,8 +185,10 @@ botonCobertor.addEventListener('click', ()=>{
 botonDeflectoresAlaskan.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioDeflectorAlaskan.innerText);
+  inputAccesorioOculto.value += ' +DEFLECTORES+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioDeflectorAlaskan.innerText);
+    inputAccesorioOculto.value += ' -DEFLECTORES- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'DEFLECTORES LLUVIA';
@@ -184,8 +198,10 @@ botonDeflectoresAlaskan.addEventListener('click', ()=>{
 botonFendersAlaskan.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioKitFenderAlaskan.innerText);
+  inputAccesorioOculto.value += ' +FENDERS+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioKitFenderAlaskan.innerText);
+    inputAccesorioOculto.value += ' -FENDERS- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'FENDERS';
@@ -195,8 +211,10 @@ botonFendersAlaskan.addEventListener('click', ()=>{
 botonProteccionAlaskan.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioProteccionAlaskan.innerText);
+  inputAccesorioOculto.value += ' +PROTECCION+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioProteccionAlaskan.innerText);
+    inputAccesorioOculto.value += ' -PROTECCION- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'PROTECCION FRONTAL';
@@ -206,8 +224,10 @@ botonProteccionAlaskan.addEventListener('click', ()=>{
 botonTuercas.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioTuercas.innerText);
+  inputAccesorioOculto.value += ' +TUERCAS+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioTuercas.innerText);
+    inputAccesorioOculto.value += ' -TUERCAS- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'TUERCAS';
@@ -217,8 +237,10 @@ botonTuercas.addEventListener('click', ()=>{
 botonPolarizados.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioPolarizado.innerText);
+  inputAccesorioOculto.value += ' +POLARIZADO+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioPolarizado.innerText);
+    inputAccesorioOculto.value += ' -POLARIZADO- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'POLARIZADOS';
@@ -228,8 +250,10 @@ botonPolarizados.addEventListener('click', ()=>{
 botonSensores.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioSensores.innerText);
+  inputAccesorioOculto.value += ' +SENSORES+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioSensores.innerText);
+    inputAccesorioOculto.value += ' -SENSORES- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'SENSORES';
@@ -239,8 +263,10 @@ botonSensores.addEventListener('click', ()=>{
 botonTalampayaInox.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioTalampayaInox.innerText);
+  inputAccesorioOculto.value += ' +TALAMPAYA INOX+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioTalampayaInox.innerText);
+    inputAccesorioOculto.value += ' -TALAMPAYA INOX- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'TALAMPAYA INOXIDABLE';
@@ -250,8 +276,10 @@ botonTalampayaInox.addEventListener('click', ()=>{
 botonTalampayaNegra.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioTalampayaNegra.innerText);
+  inputAccesorioOculto.value += ' +TALAMPAYA NEGRA+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioTalampayaNegra.innerText);
+    inputAccesorioOculto.value += ' -TALAMPAYA NEGRA- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'TALAMPAYA NEGRA';
@@ -261,8 +289,10 @@ botonTalampayaNegra.addEventListener('click', ()=>{
 botonEngancheHyper.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioEngancheHyper.innerText);
+  inputAccesorioOculto.value += ' +ENGANCHE HYPER+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioEngancheHyper.innerText);
+    inputAccesorioOculto.value += ' -ENGANCHE HYPER- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'ENGANCHE HYPERTRACK';
@@ -272,8 +302,10 @@ botonEngancheHyper.addEventListener('click', ()=>{
 botonEngancheReforzado.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioEngancheReforzado.innerText);
+  inputAccesorioOculto.value += ' +ENGANCHE REFORZADO+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioEngancheReforzado.innerText);
+    inputAccesorioOculto.value += ' -ENGANCHE REFORZADO- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'ENGANCHE REFORZADO';
@@ -283,8 +315,10 @@ botonEngancheReforzado.addEventListener('click', ()=>{
 botonEngancheComun.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioEngancheComun.innerText);
+  inputAccesorioOculto.value += ' +ENGANCHE COMUN+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioEngancheComun.innerText);
+    inputAccesorioOculto.value += ' -ENGANCHE COMUN- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'ENGANCHE COMUN';
@@ -294,8 +328,10 @@ botonEngancheComun.addEventListener('click', ()=>{
 botonJaulaCañoDobleInox.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioJaulaCañoDobleInox.innerText);
+  inputAccesorioOculto.value += ' +JAULA DOBLE INOX+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioJaulaCañoDobleInox.innerText);
+    inputAccesorioOculto.value += ' -JAULA DOBLE INOX- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA CAÑO DOBLE INOXIDABLE';
@@ -305,8 +341,10 @@ botonJaulaCañoDobleInox.addEventListener('click', ()=>{
 botonJaulaCañoDobleNegra.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioJaulaCañoDobleNegra.innerText);
+  inputAccesorioOculto.value += ' +JAULA DOBLE NEGRA+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioJaulaCañoDobleNegra.innerText);
+    inputAccesorioOculto.value += ' -JAULA DOBLE NEGRA- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA CAÑO DOBLE NEGRA';
@@ -316,8 +354,10 @@ botonJaulaCañoDobleNegra.addEventListener('click', ()=>{
 botonJaulaCañoSimpleInox.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioJaulaCañoSimpleInox.innerText);
+  inputAccesorioOculto.value += ' +JAULA SIMPLE INOX+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioJaulaCañoSimpleInox.innerText);
+    inputAccesorioOculto.value += ' -JAULA SIMPLE INOX- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA CAÑO SIMPLE INOXIDABLE';
@@ -327,8 +367,10 @@ botonJaulaCañoSimpleInox.addEventListener('click', ()=>{
 botonCabezales.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioCabezales.innerText);
+  inputAccesorioOculto.value += ' +CABEZALES+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioCabezales.innerText);
+    inputAccesorioOculto.value += ' -CABEZALES- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'CABEZALES';
@@ -338,8 +380,10 @@ botonCabezales.addEventListener('click', ()=>{
 botonJaulaCañoSimpleNegra.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioJaulaCañoSimpleNegra.innerText);
+  inputAccesorioOculto.value += ' +JAULA SIMPLE NEGRA+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioJaulaCañoSimpleNegra.innerText);
+    inputAccesorioOculto.value += ' -JAULA SIMPLE NEGRA- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA CAÑO SIMPLE NEGRA';
@@ -349,8 +393,10 @@ botonJaulaCañoSimpleNegra.addEventListener('click', ()=>{
 botonJaulaTrabajo.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioJaulaTrabajo.innerText);
+  inputAccesorioOculto.value += ' +JAULA TRABAJO+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioJaulaTrabajo.innerText);
+    inputAccesorioOculto.value += ' -JAULA TRABAJO- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'JAULA TRABAJO';
@@ -360,8 +406,10 @@ botonJaulaTrabajo.addEventListener('click', ()=>{
 botonEstriboOval.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioEstriboOval.innerText);
+  inputAccesorioOculto.value += ' +ESTRIBO OVAL+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioEstriboOval.innerText);
+    inputAccesorioOculto.value += ' -ESTRIBO OVAL- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'ESTRIBO OVAL';
@@ -371,8 +419,10 @@ botonEstriboOval.addEventListener('click', ()=>{
 botonEstribosSimilOriginal.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioEstribosSimilOriginal.innerText);
+  inputAccesorioOculto.value += ' +ESTRIBOS SIMIL+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioEstribosSimilOriginal.innerText);
+    inputAccesorioOculto.value += ' -ESTRIBOS SIMIL- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'ESTRIBOS SIMIL ORIGINAL';
@@ -382,8 +432,10 @@ botonEstribosSimilOriginal.addEventListener('click', ()=>{
 botonTapa.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioTapa.innerText);
+  inputAccesorioOculto.value += ' +TAPA+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioTapa.innerText);
+    inputAccesorioOculto.value += ' -TAPA- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'TAPA RIGIDA';
@@ -393,8 +445,10 @@ botonTapa.addEventListener('click', ()=>{
 botonKit.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioKit.innerText);
+  inputAccesorioOculto.value += ' +KIT SEGURIDAD+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioKit.innerText);
+    inputAccesorioOculto.value += ' -KIT SEGURIDAD- ';
   })
   elemento.crearItem();
   elemento.nombreItem.innerText = 'KIT SEGURIDAD';
