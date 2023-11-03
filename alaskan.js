@@ -55,6 +55,9 @@ let precioCabezales = document.querySelector('.precioCabezales');
 let precioTapa = document.querySelector('.precioTapa');
 let precioKit = document.querySelector('.precioKit');
 let contador = document.querySelector('.contadorCarrito');
+let realizarPedido = document.querySelector('.realizarPedido');
+let formulario = document.querySelector('.formulario');
+let cierreFormulario = document.querySelector('.cierreFormulario');
 
 //Apertura carrito
 botonCarrito.addEventListener('click', ()=>{
@@ -67,6 +70,20 @@ cierreCarrito.addEventListener('click', ()=>{
   function borrar(){
     carrito.classList.remove('carrito1');
     carrito.classList.remove('desaparecer');
+  }
+  setTimeout(borrar, 400);
+})
+
+//Realizar pedido
+realizarPedido.addEventListener('click', ()=>{
+  formulario.classList.add('carrito1');
+})
+
+cierreFormulario.addEventListener('click', ()=>{
+  formulario.classList.add('desaparecer');
+  function borrar(){
+    formulario.classList.remove('carrito1');
+    formulario.classList.remove('desaparecer');
   }
   setTimeout(borrar, 400);
 })
