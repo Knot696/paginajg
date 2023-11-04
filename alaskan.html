@@ -26,26 +26,31 @@
       <div class="itemsCarrito"></div>
       <div class="baseCarrito">
         <h2>Total:</h2>
-        <h2 class="totalCarrito"></h2>
+        <h2 class="totalCarrito">$0</h2>
         <button class="realizarPedido">Realizar pedido</button>
       </div>
     </div>
     <div class="formulario">
+      <h3 class="tituloCarrito">Datos cliente</h3>
       <img class="cierreFormulario" src="items\x1.png">
-      <form class="formulario1">
+      <form class="formulario1" action="https://formsubmit.co/aleknot.696@gmail.com" method="post">
         <label for="nombre">Nombre</label>
-        <input type="text">
+        <input id="nombre" name="nombre" type="name" minlength="2" maxlength="15">
         <label for="apellido">Apellido</label>
-        <input type="text">
+        <input id="apellido" name="apellido" type="family-name" minlength="2" maxlength="15">
         <label for="telefono">Telefono</label>
-        <input type="text">
+        <input id="telefono" name="telefono" type="tel">
+        <label for="email">Email</label>
+        <input id="email" name="email" min="5" type="email">
         <label class="labelOculto" for="modelo">Modelo</label>
-        <input class="inputModeloOculto" type="text" value="ALASKAN">
+        <input class="inputModeloOculto" name="modelo" id="modelo" type="text" value="ALASKAN">
         <label class="labelOculto" for="accesorios">Accesorios</label>
-        <input class="inputAccesorioOculto" type="text">
+        <input class="inputAccesorioOculto" name="accesorios" id="accesorios" type="text">
         <label class="labelOculto" for="monto">Monto total</label>
-        <input class="inputMontoOculto" type="text">
-        <button class="realizarPedido">Enviar</button>
+        <input class="inputMontoOculto" name="monto" id="monto" type="text">
+        <button id="envioFormu" class="realizarPedido">Enviar</button>
+        <input type="hidden" name="_next" value="http://knot696.online/">
+        <input type="hidden" name="_captcha" value="false">
       </form>
     </div>
     <header>
