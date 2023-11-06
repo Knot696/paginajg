@@ -1,3 +1,20 @@
+let body = document.querySelector('body');
+let botonCarrito = document.querySelector('.botonCarrito');
+let carrito = document.querySelector('.carrito');
+let cierreCarrito = document.querySelector('.cierreCarrito');
+let itemsCarrito = document.querySelector('.itemsCarrito');
+let totalCarrito = document.querySelector('.totalCarrito');
+let contador = document.querySelector('.contadorCarrito');
+let realizarPedido = document.querySelector('.realizarPedido');
+let formulario = document.querySelector('.formulario');
+let cierreFormulario = document.querySelector('.cierreFormulario');
+let inputAccesorioOculto = document.querySelector('.inputAccesorioOculto');
+let inputMontoOculto = document.querySelector('.inputMontoOculto');
+let nombre = document.querySelector('#nombre');
+let apellido = document.querySelector('#apellido');
+let telefono = document.querySelector('#telefono');
+let email = document.querySelector('#email');
+let envioFormu = document.querySelector('#envioFormu');
 let botonJaulaNegra = document.querySelector('.botonJaulaNegra');
 let botonJaulaCromada = document.querySelector('.botonJaulaCromada');
 let botonLonaAlaskan = document.querySelector('.botonLonaAlaskan');
@@ -23,12 +40,6 @@ let botonEstriboOval = document.querySelector('.botonEstriboOval');
 let botonCabezales = document.querySelector('.botonCabezales');
 let botonTapa = document.querySelector('.botonTapa');
 let botonKit = document.querySelector('.botonKit');
-let body = document.querySelector('body');
-let botonCarrito = document.querySelector('.botonCarrito');
-let carrito = document.querySelector('.carrito');
-let cierreCarrito = document.querySelector('.cierreCarrito');
-let itemsCarrito = document.querySelector('.itemsCarrito');
-let totalCarrito = document.querySelector('.totalCarrito');
 let precioJaulaNegra = document.querySelector('.precioJaulaNegra');
 let precioJaulaCromada = document.querySelector('.precioJaulaCromada');
 let precioLonaAlaskan = document.querySelector('.precioLonaAlaskan');
@@ -54,17 +65,6 @@ let precioEstriboOval = document.querySelector('.precioEstriboOval');
 let precioCabezales = document.querySelector('.precioCabezales');
 let precioTapa = document.querySelector('.precioTapa');
 let precioKit = document.querySelector('.precioKit');
-let contador = document.querySelector('.contadorCarrito');
-let realizarPedido = document.querySelector('.realizarPedido');
-let formulario = document.querySelector('.formulario');
-let cierreFormulario = document.querySelector('.cierreFormulario');
-let inputAccesorioOculto = document.querySelector('.inputAccesorioOculto');
-let inputMontoOculto = document.querySelector('.inputMontoOculto');
-let nombre = document.querySelector('#nombre');
-let apellido = document.querySelector('#apellido');
-let telefono = document.querySelector('#telefono');
-let email = document.querySelector('#email');
-let envioFormu = document.querySelector('#envioFormu');
 
 //Apertura carrito
 botonCarrito.addEventListener('click', ()=>{
@@ -245,7 +245,7 @@ botonFendersAlaskan.addEventListener('click', ()=>{
     inputAccesorioOculto.value += ' -FENDERS- ';
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'FENDERS';
+  elemento.nombreItem.innerText = 'KIT FENDERS';
   elemento.precioItem.innerText = "$" + precioKitFenderAlaskan.innerText;
   elemento.imgItem.src = 'alaskan/19.jpg';
 })
@@ -271,7 +271,7 @@ botonTuercas.addEventListener('click', ()=>{
     inputAccesorioOculto.value += ' -TUERCAS- ';
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'TUERCAS';
+  elemento.nombreItem.innerText = 'TUERCAS SEGURIDAD';
   elemento.precioItem.innerText = "$" + precioTuercas.innerText;
   elemento.imgItem.src = 'alaskan/22.jpg';
 })
@@ -284,7 +284,7 @@ botonPolarizados.addEventListener('click', ()=>{
     inputAccesorioOculto.value += ' -POLARIZADO- ';
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'POLARIZADOS';
+  elemento.nombreItem.innerText = 'POLARIZADO';
   elemento.precioItem.innerText = "$" + precioPolarizado.innerText;
   elemento.imgItem.src = 'genericos/pola.jpg';
 })
@@ -297,7 +297,7 @@ botonSensores.addEventListener('click', ()=>{
     inputAccesorioOculto.value += ' -SENSORES- ';
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'SENSORES';
+  elemento.nombreItem.innerText = 'SENSORES ESTACIONAMIENTO';
   elemento.precioItem.innerText = "$" + precioSensores.innerText;
   elemento.imgItem.src = 'genericos/k8.jpg';
 })
@@ -453,7 +453,7 @@ botonEstriboOval.addEventListener('click', ()=>{
     inputAccesorioOculto.value += ' -ESTRIBO OVAL- ';
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'ESTRIBO OVAL';
+  elemento.nombreItem.innerText = 'ESTRIBOS OVAL';
   elemento.precioItem.innerText = "$" + precioEstriboOval.innerText;
   elemento.imgItem.src = 'alaskan/15.jpg';
 })

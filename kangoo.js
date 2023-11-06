@@ -247,7 +247,7 @@ botonSensores.addEventListener('click', ()=>{
     inputAccesorioOculto.value += ' -SENSORES- ';
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'SENSORES DE ESTACIONAMIENTO';
+  elemento.nombreItem.innerText = 'SENSORES ESTACIONAMIENTO';
   elemento.precioItem.innerText = "$" + precioSensores.innerText;
   elemento.imgItem.src = 'genericos/k8.jpg';
 })
@@ -273,7 +273,7 @@ botonChapon.addEventListener('click', ()=>{
     inputAccesorioOculto.value += ' -CHAPON- ';
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'CHAPON';
+  elemento.nombreItem.innerText = 'CHAPON CUBRECARTER';
   elemento.precioItem.innerText = "$" + precioChapon.innerText;
   elemento.imgItem.src = 'kangoo/k10.jpg';
 })

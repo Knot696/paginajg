@@ -161,7 +161,7 @@ botonApoyaBrazos.addEventListener('click', ()=>{
     total-=parseInt(precioJaulaCromada.innerText);
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'APOYA BRAZOS';
+  elemento.nombreItem.innerText = 'APOYABRAZOS';
   elemento.precioItem.innerText = "$" + precioApoyaBrazos.innerText;
   elemento.imgItem.src = 'duster/d2.jpg';
 })

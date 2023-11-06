@@ -188,13 +188,13 @@ botonKit.addEventListener('click', ()=>{
 botonCamara.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioCamara.innerText);
-  inputAccesorioOculto.value += ' +ENGANCHE+ ';
+  inputAccesorioOculto.value += ' +CAMARA+ ';
   elemento.eliminarItem.addEventListener('click',()=>{
     total-=parseInt(precioCamara.innerText);
-    inputAccesorioOculto.value += ' -ENGANCHE- ';
+    inputAccesorioOculto.value += ' -CAMARA- ';
   })
   elemento.crearItem();
-  elemento.nombreItem.innerText = 'ENGANCHE';
+  elemento.nombreItem.innerText = 'CAMARA RETROCESO';
   elemento.precioItem.innerText = "$" + precioCamara.innerText;
   elemento.imgItem.src = 'genericos/k3.jpg';
 })
