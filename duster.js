@@ -5,6 +5,16 @@ let cierreCarrito = document.querySelector('.cierreCarrito');
 let itemsCarrito = document.querySelector('.itemsCarrito');
 let totalCarrito = document.querySelector('.totalCarrito');
 let contador = document.querySelector('.contadorCarrito');
+let realizarPedido = document.querySelector('.realizarPedido');
+let formulario = document.querySelector('.formulario');
+let cierreFormulario = document.querySelector('.cierreFormulario');
+let inputAccesorioOculto = document.querySelector('.inputAccesorioOculto');
+let inputMontoOculto = document.querySelector('.inputMontoOculto');
+let nombre = document.querySelector('#nombre');
+let apellido = document.querySelector('#apellido');
+let telefono = document.querySelector('#telefono');
+let email = document.querySelector('#email');
+let envioFormu = document.querySelector('#envioFormu');
 let botonPortaEquipaje = document.querySelector('.botonPortaEquipaje');
 let botonApoyaBrazos = document.querySelector('.botonApoyaBrazos');
 let botonProtectoresDuster = document.querySelector('.botonProtectoresDuster');
@@ -42,7 +52,57 @@ cierreCarrito.addEventListener('click', ()=>{
     carrito.classList.remove('carrito1');
     carrito.classList.remove('desaparecer');
   }
-  setTimeout(borrar, 300);
+  setTimeout(borrar, 400);
+})
+
+//Realizar pedido
+realizarPedido.addEventListener('click', ()=>{
+  formulario.classList.add('carrito1');
+})
+
+cierreFormulario.addEventListener('click', ()=>{
+  formulario.classList.add('desaparecer');
+  function borrar(){
+    formulario.classList.remove('carrito1');
+    formulario.classList.remove('desaparecer');
+  }
+  setTimeout(borrar, 400);
+})
+
+//Validacion formulario
+
+  /* usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	password: /^.{4,12}$/, // 4 a 12 digitos.
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	telefono: /^\d{7,14}$/ // 7 a 14 numeros. */
+
+envioFormu.addEventListener('click', (e)=>{
+  e.preventDefault
+  if(nombre.value == ''){
+    nombre.classList.add('error');
+    return;
+  }else{
+    nombre.classList.remove('error');
+  }
+  if(apellido.value == ''){
+    apellido.classList.add('error');
+    return;
+  }else{
+    apellido.classList.remove('error');
+  }
+  if(telefono.value == ''){
+    telefono.classList.add('error');
+    return;
+  }else{
+    telefono.classList.remove('error');
+  }
+  if(email.value == ''){
+    email.classList.add('error');
+    return;
+  }else{
+    email.classList.remove('error');
+  }
 })
 
 let total=0;
