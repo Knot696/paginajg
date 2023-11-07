@@ -1,3 +1,22 @@
+let body = document.querySelector('body');
+let botonCarrito = document.querySelector('.botonCarrito');
+let carrito = document.querySelector('.carrito');
+let cierreCarrito = document.querySelector('.cierreCarrito');
+let itemsCarrito = document.querySelector('.itemsCarrito');
+let totalCarrito = document.querySelector('.totalCarrito');
+let contador = document.querySelector('.contadorCarrito');
+let realizarPedido = document.querySelector('.realizarPedido');
+let formulario = document.querySelector('.formulario');
+let cierreFormulario = document.querySelector('.cierreFormulario');
+let inputAccesorioOculto = document.querySelector('.inputAccesorioOculto');
+let inputMontoOculto = document.querySelector('.inputMontoOculto');
+let nombre = document.querySelector('#nombre');
+let apellido = document.querySelector('#apellido');
+let telefono = document.querySelector('#telefono');
+let email = document.querySelector('#email');
+let envioFormu = document.querySelector('#envioFormu');
+let mensajeEnvio = document.querySelector('.mensajeEnvio');
+//ALASKAN
 let botonJaulaNegra = document.querySelector('.botonJaulaNegra');
 let botonJaulaCromada = document.querySelector('.botonJaulaCromada');
 let botonLonaAlaskan = document.querySelector('.botonLonaAlaskan');
@@ -23,12 +42,6 @@ let botonEstriboOval = document.querySelector('.botonEstriboOval');
 let botonCabezales = document.querySelector('.botonCabezales');
 let botonTapa = document.querySelector('.botonTapa');
 let botonKit = document.querySelector('.botonKit');
-let body = document.querySelector('body');
-let botonCarrito = document.querySelector('.botonCarrito');
-let carrito = document.querySelector('.carrito');
-let cierreCarrito = document.querySelector('.cierreCarrito');
-let itemsCarrito = document.querySelector('.itemsCarrito');
-let totalCarrito = document.querySelector('.totalCarrito');
 let precioJaulaNegra = document.querySelector('.precioJaulaNegra');
 let precioJaulaCromada = document.querySelector('.precioJaulaCromada');
 let precioLonaAlaskan = document.querySelector('.precioLonaAlaskan');
@@ -54,20 +67,141 @@ let precioEstriboOval = document.querySelector('.precioEstriboOval');
 let precioCabezales = document.querySelector('.precioCabezales');
 let precioTapa = document.querySelector('.precioTapa');
 let precioKit = document.querySelector('.precioKit');
-let contador = document.querySelector('.contadorCarrito');
-
-//Apertura carrito
-botonCarrito.addEventListener('click', ()=>{
-  carrito.classList.add('carrito1')
-})
-
-//Cierre carrito
-cierreCarrito.addEventListener('click', ()=>{
-  carrito.classList.remove('carrito1')
-})
+//DUSTER
+let botonPortaEquipajeDuster = document.querySelector('.botonPortaEquipajeDuster');
+let botonApoyaBrazosDuster = document.querySelector('.botonApoyaBrazosDuster');
+let botonProtectoresDuster = document.querySelector('.botonProtectoresDuster');
+let botonDeflectoresDuster = document.querySelector('.botonDeflectoresDuster');
+let botonTrabaDuster = document.querySelector('.botonTrabaDuster');
+let botonFendersDuster = document.querySelector('.botonFendersDuster');
+let botonCamaraDuster = document.querySelector('.botonCamaraDuster');
+let botonSensoresDuster = document.querySelector('.botonSensoresDuster');
+let botonTornillosDuster = document.querySelector('.botonTornillosDuster');
+let botonPolarizadosDuster = document.querySelector('.botonPolarizadosDuster');
+let botonKitDuster = document.querySelector('.botonKitDuster');
+let botonDefensaFrontalDuster = document.querySelector('.botonDefensaFrontalDuster');
+let precioPortaEquipajeDuster = document.querySelector('.precioPortaEquipajeDuster');
+let precioApoyaBrazosDuster = document.querySelector('.precioApoyaBrazosDuster');
+let precioProtectoresDuster = document.querySelector('.precioProtectoresDuster');
+let precioDeflectoresDuster = document.querySelector('.precioDeflectoresDuster');
+let precioTrabaDuster = document.querySelector('.precioTrabaDuster');
+let precioFendersDuster = document.querySelector('.precioFendersDuster');
+let precioCamaraDuster = document.querySelector('.precioCamaraDuster');
+let precioSensoresDuster = document.querySelector('.precioSensoresDuster');
+let precioTornillosDuster = document.querySelector('.precioTornillosDuster');
+let precioPolarizadosDuster = document.querySelector('.precioPolarizadosDuster');
+let precioKitDuster = document.querySelector('.precioKitDuster');
+let precioDefensaFrontalDuster = document.querySelector('.precioDefensaFrontalDuster');
+//KANGOO
+let botonGaleriaTechoKangoo = document.querySelector('.botonGaleriaTechoKangoo');
+let botonApoyaBrazosKangoo = document.querySelector('.botonApoyaBrazosKangoo');
+let botonCamaraRetrocesoKangoo = document.querySelector('.botonCamaraRetrocesoKangoo');
+let botonLlantasKangoo = document.querySelector('.botonLlantasKangoo');
+let botonEngancheKangoo = document.querySelector('.botonEngancheKangoo');
+let botonMariposeroKangoo = document.querySelector('.botonMariposeroKangoo');
+let botonCanastoKangoo = document.querySelector('.botonCanastoKangoo');
+let botonSensoresKangoo = document.querySelector('.botonSensoresKangoo');
+let botonTornillosKangoo = document.querySelector('.botonTornillosKangoo');
+let botonChaponKangoo = document.querySelector('.botonChaponKangoo');
+let botonCobertorKangoo = document.querySelector('.botonCobertorKangoo');
+let botonPolarizadoKangoo = document.querySelector('.botonPolarizadoKangoo');
+let botonKitKangoo = document.querySelector('.botonKitKangoo');
+let precioGaleriaTechoKangoo = document.querySelector('.precioGaleriaTechoKangoo');
+let precioApoyaBrazosKangoo = document.querySelector('.precioApoyaBrazosKangoo');
+let precioCamaraRetrocesoKangoo = document.querySelector('.precioCamaraRetrocesoKangoo');
+let precioLlantasKangoo = document.querySelector('.precioLlantasKangoo');
+let precioEngancheKangoo = document.querySelector('.precioEngancheKangoo');
+let precioMariposeroKangoo = document.querySelector('.precioMariposeroKangoo');
+let precioCanastoKangoo = document.querySelector('.precioCanastoKangoo');
+let precioSensoresKangoo = document.querySelector('.precioSensoresKangoo');
+let precioTornillosKangoo = document.querySelector('.precioTornillosKangoo');
+let precioChaponKangoo = document.querySelector('.precioChaponKangoo');
+let precioCobertorKangoo = document.querySelector('.precioCobertorKangoo');
+let precioPolarizadoKangoo = document.querySelector('.precioPolarizadoKangoo');
+let precioKitKangoo = document.querySelector('.precioKitKangoo');
+//LOGAN
+let botonSensoresLogan = document.querySelector('.botonSensoresLogan');
+let botonTornillosLogan = document.querySelector('.botonTornillosLogan');
+let botonPolarizadoLogan = document.querySelector('.botonPolarizadoLogan');
+let botonKitLogan = document.querySelector('.botonKitLogan');
+let botonCamaraLogan = document.querySelector('.botonCamaraLogan');
+let botonChaponLogan = document.querySelector('.botonChaponLogan');
+let precioSensoresLogan = document.querySelector('.precioSensoresLogan');
+let precioTornillosLogan = document.querySelector('.precioTornillosLogan');
+let precioPolarizadoLogan = document.querySelector('.precioPolarizadoLogan');
+let precioKitLogan = document.querySelector('.precioKitLogan');
+let precioCamaraLogan = document.querySelector('.precioCamaraLogan');
+let precioChaponLogan = document.querySelector('.precioChaponLogan');
 
 let total=0;
 let contadorCarrito = 0;
+
+//Apertura carrito
+function abrirCarrito(){
+  carrito.classList.add('carrito1');
+}
+
+//Cierre carrito
+function cerrarCarrito(){
+  carrito.classList.add('desaparecer');
+  function borrar(){
+    carrito.classList.remove('carrito1');
+    carrito.classList.remove('desaparecer');
+  }
+  setTimeout(borrar, 400);
+}
+
+//Realizar pedido
+function abrirForm(){
+  formulario.classList.add('carrito1');
+}
+
+function cierreForm(){
+  formulario.classList.add('desaparecer');
+  function borrar(){
+    formulario.classList.remove('carrito1');
+    formulario.classList.remove('desaparecer');
+  }
+  setTimeout(borrar, 400);
+}
+
+//Validacion formulario
+
+	let name = /^[a-zA-ZÀ-ÿ\s]{2,40}$/ // Letras y espacios, pueden llevar acentos.
+	let correo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+	let tel = /^\d{7,14}$/ // 7 a 14 numeros.
+
+function validacion(e){
+  if((nombre.value == '')||(name.test(nombre.value)==false)){
+    nombre.classList.add('error');
+    e.preventDefault()
+    return;
+  }else{
+    nombre.classList.remove('error');
+  }
+  if((apellido.value == '')||(name.test(apellido.value)==false)){
+    apellido.classList.add('error');
+    e.preventDefault()
+    return;
+  }else{
+    apellido.classList.remove('error');
+  }
+  if((telefono.value == '')||(tel.test(telefono.value)==false)){
+    telefono.classList.add('error');
+    e.preventDefault()
+    return;
+  }else{
+    telefono.classList.remove('error');
+  }
+  if((email.value == '')||(correo.test(email.value)==false)){
+    email.classList.add('error');
+    e.preventDefault()
+    return;
+  }else{
+    email.classList.remove('error');
+  }
+  mensajeEnvio.classList.add('mensajeEnvio1');
+}
 
 //Plantilla para items
 class Items{
@@ -93,289 +227,13 @@ class Items{
     this.eliminarItem.classList.add('eliminarItems');
     this.eliminarItem.src = 'items/x.png';
     totalCarrito.innerText = '$'+total;
+    inputMontoOculto.value = totalCarrito.innerText;
     contador.innerText=contadorCarrito += 1;
     this.eliminarItem.addEventListener('click',()=>{
       itemsCarrito.removeChild(this.item);
       totalCarrito.innerText = '$'+total;
+      inputMontoOculto.value = totalCarrito.innerText;
       contador.innerText= contadorCarrito -= 1;
     })
   }
 }
-
-//Agregar elementos al carrito
-
-botonJaulaNegra.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioJaulaNegra.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioJaulaNegra.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'JAULA NEGRA';
-  elemento.precioItem.innerText = "$" + precioJaulaNegra.innerText;
-  elemento.imgItem.src = 'alaskan/1.jpg';
-})
-botonJaulaCromada.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioJaulaCromada.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioJaulaCromada.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'JAULA CROMADA';
-  elemento.precioItem.innerText = "$" + precioJaulaCromada.innerText;
-  elemento.imgItem.src = 'alaskan/2.jpg';
-})
-botonLonaAlaskan.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioLona.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioLona.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'LONA MARITIMA';
-  elemento.precioItem.innerText = "$" + precioLonaAlaskan.innerText;
-  elemento.imgItem.src = 'alaskan/4.jpg';
-})
-botonCobertor.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioCobertor.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioCobertor.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'COBERTOR';
-  elemento.precioItem.innerText = "$" + precioCobertor.innerText;
-  elemento.imgItem.src = 'alaskan/5.jpg';
-})
-botonDeflectoresAlaskan.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioDeflector.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioDeflector.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'DEFLECTORES LLUVIA';
-  elemento.precioItem.innerText = "$" + precioDeflectorAlaskan.innerText;
-  elemento.imgItem.src = 'alaskan/18.jpg';
-})
-botonFendersAlaskan.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioKitFender.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioKitFender.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'FENDERS';
-  elemento.precioItem.innerText = "$" + precioKitFenderAlaskan.innerText;
-  elemento.imgItem.src = 'alaskan/19.jpg';
-})
-botonProteccionAlaskan.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioProteccion.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioProteccion.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'PROTECCION FRONTAL';
-  elemento.precioItem.innerText = "$" + precioProteccionAlaskan.innerText;
-  elemento.imgItem.src = 'alaskan/20.jpg';
-})
-botonTuercas.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioTuercas.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioTuercas.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'TUERCAS';
-  elemento.precioItem.innerText = "$" + precioTuercas.innerText;
-  elemento.imgItem.src = 'alaskan/22.jpg';
-})
-botonPolarizados.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioPolarizado.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioPolarizado.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'POLARIZADOS';
-  elemento.precioItem.innerText = "$" + precioPolarizado.innerText;
-  elemento.imgItem.src = 'genericos/pola.jpg';
-})
-botonSensores.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioSensores.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioSensores.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'SENSORES';
-  elemento.precioItem.innerText = "$" + precioSensores.innerText;
-  elemento.imgItem.src = 'genericos/k8.jpg';
-})
-botonTalampayaInox.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioTalampayaInox.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioTalampayaInox.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'TALAMPAYA INOXIDABLE';
-  elemento.precioItem.innerText = "$" + precioTalampayaInox.innerText;
-  elemento.imgItem.src = 'alaskan/3.jpg';
-})
-botonTalampayaNegra.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioTalampayaNegra.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioTalampayaNegra.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'TALAMPAYA NEGRA';
-  elemento.precioItem.innerText = "$" + precioTalampayaNegra.innerText;
-  elemento.imgItem.src = 'alaskan/6.jpg';
-})
-botonEngancheHyper.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioEngancheHyper.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioEngancheHyper.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'ENGANCHE HYPERTRACK';
-  elemento.precioItem.innerText = "$" + precioEngancheHyper.innerText;
-  elemento.imgItem.src = 'alaskan/8.jpg';
-})
-botonEngancheReforzado.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioEngancheReforzado.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioEngancheReforzado.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'ENGANCHE REFORZADO';
-  elemento.precioItem.innerText = "$" + precioEngancheReforzado.innerText;
-  elemento.imgItem.src = 'alaskan/14.jpg';
-})
-botonEngancheComun.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioEngancheComun.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioEngancheComun.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'ENGANCHE COMUN';
-  elemento.precioItem.innerText = "$" + precioEngancheComun.innerText;
-  elemento.imgItem.src = 'alaskan/16.jpg';
-})
-botonJaulaCañoDobleInox.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioJaulaCañoDobleInox.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioJaulaCañoDobleInox.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'JAULA CAÑO DOBLE INOXIDABLE';
-  elemento.precioItem.innerText = "$" + precioJaulaCañoDobleInox.innerText;
-  elemento.imgItem.src = 'alaskan/9.jpg';
-})
-botonJaulaCañoDobleNegra.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioJaulaCañoDobleNegra.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioJaulaCañoDobleNegra.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'JAULA CAÑO DOBLE NEGRA';
-  elemento.precioItem.innerText = "$" + precioJaulaCañoDobleNegra.innerText;
-  elemento.imgItem.src = 'alaskan/12.jpg';
-})
-botonJaulaCañoSimpleInox.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioJaulaCañoSimpleInox.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioJaulaCañoSimpleInox.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'JAULA CAÑO SIMPLE INOXIDABLE';
-  elemento.precioItem.innerText = "$" + precioJaulaCañoSimpleInox.innerText;
-  elemento.imgItem.src = 'alaskan/10.jpg';
-})
-botonCabezales.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioCabezales.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioCabezales.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'CABEZALES';
-  elemento.precioItem.innerText = "$" + precioCabezales.innerText;
-  elemento.imgItem.src = 'alaskan/17.jpg';
-})
-botonJaulaCañoSimpleNegra.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioJaulaCañoSimpleNegra.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioJaulaCañoSimpleNegra.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'JAULA CAÑO SIMPLE NEGRA';
-  elemento.precioItem.innerText = "$" + precioJaulaCañoSimpleNegra.innerText;
-  elemento.imgItem.src = 'alaskan/2.jpg';
-})
-botonJaulaTrabajo.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioJaulaTrabajo.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioJaulaTrabajo.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'JAULA TRABAJO';
-  elemento.precioItem.innerText = "$" + precioJaulaTrabajo.innerText;
-  elemento.imgItem.src = 'alaskan/13.jpg';
-})
-botonEstriboOval.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioEstriboOval.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioEstriboOval.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'ESTRIBO OVAL';
-  elemento.precioItem.innerText = "$" + precioEstriboOval.innerText;
-  elemento.imgItem.src = 'alaskan/15.jpg';
-})
-botonEstribosSimilOriginal.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioEstribosSimilOriginal.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioEstribosSimilOriginal.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'ESTRIBOS SIMIL ORIGINAL';
-  elemento.precioItem.innerText = "$" + precioEstribosSimilOriginal.innerText;
-  elemento.imgItem.src = 'alaskan/7.jpg';
-})
-botonTapa.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioTapa.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioTapa.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'TAPA RIGIDA';
-  elemento.precioItem.innerText = "$" + precioTapa.innerText;
-  elemento.imgItem.src = 'alaskan/21.jpg';
-})
-botonKit.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioKit.innerText);
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioKit.innerText);
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'KIT SEGURIDAD';
-  elemento.precioItem.innerText = "$" + precioKit.innerText;
-  elemento.imgItem.src = 'genericos/kits.jpg';
-})
