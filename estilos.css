@@ -116,11 +116,12 @@ nav{
   margin-bottom: 20px;
 }
 main{
-  margin: 2%;
+  margin: 7%;
   display: grid;
   width: auto;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  column-gap: 2%;
+  column-gap: 5%;
   row-gap: 20px;
 }
 article{
@@ -296,10 +297,16 @@ p{
     transform: scale(100%);
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 685px) {
   main{
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 2%;
+  }
+}
+@media (min-width: 740px) {
+  main{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 5%;
+    margin: 2%;
   }
   header{
     height: 50px;
@@ -376,5 +383,10 @@ p{
   }
   .logo{
     display: none;
+  }
+}
+@media (min-width: 950px) {
+  .imgPresentacion{
+    width: 60%
   }
 }
