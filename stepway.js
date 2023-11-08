@@ -104,5 +104,5 @@ botonChaponStepway.addEventListener('click', ()=>{
   elemento.crearItem();
   elemento.nombreItem.innerText = 'CHAPON CUBRECARTER';
   elemento.precioItem.innerText = "$" + precioChaponStepway.innerText;
-  elemento.imgItem.src = 'genericos/s1.jpg';
+  elemento.imgItem.src = 'sandero/s1.jpg';
 })

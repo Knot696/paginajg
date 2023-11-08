@@ -171,19 +171,6 @@ botonTalampayaNegra.addEventListener('click', ()=>{
   elemento.precioItem.innerText = "$" + precioTalampayaNegra.innerText;
   elemento.imgItem.src = 'alaskan/6.jpg';
 })
-botonEngancheHyper.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioEngancheHyper.innerText);
-  inputAccesorioOculto.value += ' +ENGANCHE HYPER+ ';
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioEngancheHyper.innerText);
-    inputAccesorioOculto.value += ' -ENGANCHE HYPER- ';
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'ENGANCHE HYPERTRACK';
-  elemento.precioItem.innerText = "$" + precioEngancheHyper.innerText;
-  elemento.imgItem.src = 'alaskan/8.jpg';
-})
 botonEngancheReforzado.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
   total+=parseInt(precioEngancheReforzado.innerText);
@@ -248,19 +235,6 @@ botonJaulaCañoSimpleInox.addEventListener('click', ()=>{
   elemento.nombreItem.innerText = 'JAULA CAÑO SIMPLE INOXIDABLE';
   elemento.precioItem.innerText = "$" + precioJaulaCañoSimpleInox.innerText;
   elemento.imgItem.src = 'alaskan/10.jpg';
-})
-botonCabezales.addEventListener('click', ()=>{
-  let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
-  total+=parseInt(precioCabezales.innerText);
-  inputAccesorioOculto.value += ' +CABEZALES+ ';
-  elemento.eliminarItem.addEventListener('click',()=>{
-    total-=parseInt(precioCabezales.innerText);
-    inputAccesorioOculto.value += ' -CABEZALES- ';
-  })
-  elemento.crearItem();
-  elemento.nombreItem.innerText = 'CABEZALES';
-  elemento.precioItem.innerText = "$" + precioCabezales.innerText;
-  elemento.imgItem.src = 'alaskan/17.jpg';
 })
 botonJaulaCañoSimpleNegra.addEventListener('click', ()=>{
   let elemento = new Items(document.createElement('div'), document.createElement('img'), document.createElement('img'), document.createElement('div'), document.createElement('p'), document.createElement('p'), document.createElement('h2'));
