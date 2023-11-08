@@ -119,6 +119,33 @@ let precioChaponKangoo = document.querySelector('.precioChaponKangoo');
 let precioCobertorKangoo = document.querySelector('.precioCobertorKangoo');
 let precioPolarizadoKangoo = document.querySelector('.precioPolarizadoKangoo');
 let precioKitKangoo = document.querySelector('.precioKitKangoo');
+//OROCH
+let botonDefensaOroch = document.querySelector('.botonDefensaOroch');
+let botonPortaOroch = document.querySelector('.botonPortaOroch');
+let botonBarraOroch = document.querySelector('.botonBarraOroch');
+let botonBarrerosOroch = document.querySelector('.botonBarrerosOroch');
+let botonLonaOroch = document.querySelector('.botonLonaOroch');
+let botonDeflectoresOroch = document.querySelector('.botonDeflectoresOroch');
+let botonEstribosOroch = document.querySelector('.botonEstribosOroch');
+let botonApoyabrazosOroch = document.querySelector('.botonApoyabrazosOroch');
+let botonSensoresOroch = document.querySelector('.botonSensoresOroch');
+let botonTornillosOroch = document.querySelector('.botonTornillosOroch');
+let botonPolarizadoOroch = document.querySelector('.botonPolarizadoOroch');
+let botonKitOroch = document.querySelector('.botonKitOroch');
+let botonCamaraOroch = document.querySelector('.botonCamaraOroch');
+let precioDefensaOroch = document.querySelector('.precioDefensaOroch');
+let precioPortaOroch = document.querySelector('.precioPortaOroch');
+let precioBarraOroch = document.querySelector('.precioBarraOroch');
+let precioBarrerosOroch = document.querySelector('.precioBarrerosOroch');
+let precioLonaOroch = document.querySelector('.precioLonaOroch');
+let precioDeflectoresOroch = document.querySelector('.precioDeflectoresOroch');
+let precioEstribosOroch = document.querySelector('.precioEstribosOroch');
+let precioApoyabrazosOroch = document.querySelector('.precioApoyabrazosOroch');
+let precioSensoresOroch = document.querySelector('.precioSensoresOroch');
+let precioTornillosOroch = document.querySelector('.precioTornillosOroch');
+let precioPolarizadoOroch = document.querySelector('.precioPolarizadoOroch');
+let precioKitOroch = document.querySelector('.precioKitOroch');
+let precioCamaraOroch = document.querySelector('.precioCamaraOroch');
 //LOGAN
 let botonSensoresLogan = document.querySelector('.botonSensoresLogan');
 let botonTornillosLogan = document.querySelector('.botonTornillosLogan');
@@ -153,7 +180,11 @@ function cerrarCarrito(){
 
 //Realizar pedido
 function abrirForm(){
+  if(itemsCarrito.innerHTML==''){
+    alert('No hay items en el carrito')
+  }else{
   formulario.classList.add('carrito1');
+  }
 }
 
 function cierreForm(){

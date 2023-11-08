@@ -21,6 +21,44 @@
     <title>Accesorios Renault Oroch</title>
   </head>
   <body>
+    <div class="carrito">
+      <h3 class="tituloCarrito">CARRITO</h3>
+      <img class="cierreCarrito" src="items\x1.png">
+      <div class="itemsCarrito"></div>
+      <div class="baseCarrito">
+        <h2>Total:</h2>
+        <h2 class="totalCarrito">$0</h2>
+        <button class="realizarPedido">Realizar pedido</button>
+      </div>
+    </div>
+    <div class="formulario">
+      <h3 class="tituloCarrito">Datos cliente</h3>
+      <img class="cierreFormulario" src="items\x1.png">
+      <form class="formulario1" action="https://formsubmit.co/aleknot.696@gmail.com" method="post">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="name" minlength="2" maxlength="15">
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="family-name" minlength="2" maxlength="15">
+        <label for="telefono">Telefono</label>
+        <input id="telefono" name="telefono" type="tel">
+        <label for="email">Email</label>
+        <input id="email" name="email" min="5" type="email">
+        <label class="labelOculto" for="modelo">Modelo</label>
+        <input class="inputModeloOculto" name="modelo" id="modelo" type="text" value="ALASKAN">
+        <label class="labelOculto" for="accesorios">Accesorios</label>
+        <input class="inputAccesorioOculto" name="accesorios" id="accesorios" type="text">
+        <label class="labelOculto" for="monto">Monto total</label>
+        <input class="inputMontoOculto" name="monto" id="monto" type="text">
+        <button id="envioFormu" class="realizarPedido">Enviar</button>
+        <input type="hidden" name="_next" value="http://knot696.online/">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+      <div class="mensajeEnvio">
+        <img src="items\check.png">
+        <h3>Pedido realizado correctamente</h3>
+        <h6>En breve nos comunicaremos con usted para finalizar su pedido.</h6>
+      </div>
+    </div>
     <header>
       <nav>
         <a class="menu" href="#desplegable"><img src="items\menu.png"></a>
@@ -98,10 +136,15 @@
                   <li>Plástico termoformado resistente al sol y productos químicos.</li>
                   <li>Textura antideslizante de fácil limpieza.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioDefensaOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonDefensaOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="oroch\o1.jpg">
@@ -119,10 +162,15 @@
                   <li>Fácil colocación, no requiere hacer modificaciones en el vehículo.</li>
                   <li>Cuenta con tapas plásticas en las puntas de las barras y una capa de goma en la parte superior para no dañar la carga.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioPortaOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonPortaOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="oroch/o4.jpg">
@@ -139,10 +187,15 @@
                   <li>Compatible con lona marítima.</li>
                   <li>Ayuda a transportar cargas y objetos.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioBarraOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonBarraOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="oroch\o2.jpg">
@@ -159,10 +212,15 @@
                   <li>kit de guardabarros.</li>
                   <li>Protege eficazmente el bajo de carrocería del barro.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioBarrerosOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonBarrerosOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="oroch\o5.jpg">
@@ -180,10 +238,15 @@
                   <li>Cierre con resorte.</li>
                   <li>Grampa de fijación con bulón oculto.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioLonaOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonLonaOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="oroch\o6.jpg">
@@ -200,10 +263,15 @@
                   <li>Acrílico resistente.</li>
                   <li>Adhesivo.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioDeflectoresOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonDeflectoresOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="oroch\o7.jpg">
@@ -221,10 +289,15 @@
                   <li>Pisaderas antideslizantes y punteras de inyección plástica.</li>
                   <li>Fijados al chasis.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioEstribosOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonEstribosOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="duster\d2.jpg">
@@ -232,7 +305,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>APOYA BRAZOS</h2>
+                <h2>APOYABRAZOS</h2>
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -242,10 +315,15 @@
                   <li>Baulera guardaobjetos.</li>
                   <li>Parte superior acolchada.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioApoyabrazosOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonApoyabrazosOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="genericos\k8.jpg">
@@ -263,10 +341,15 @@
                   <li>Regulación de distancia de alerta.</li>
                   <li>Activa al colocar reversa.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioSensoresOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonSensoresOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="genericos\k9.jpg">
@@ -283,16 +366,21 @@
                   <li>Kit 4 tornillos de seguridad con llave especial.</li>
                   <li>Evita la manipulación de llantas con herramientas convencionales.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioTornillosOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonTornillosOroch">Agregar al carrito</button>
       </article>
-    <article>
-      <img src="genericos\pola.jpg">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
+      <article>
+       <img src="genericos\pola.jpg">
+       <div class="accordion accordion-flush" id="accordionFlushExample">
+         <div class="accordion-item">
+           <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               <h2>POLARIZADOS</h2>
             </button>
@@ -303,10 +391,15 @@
                 <li>Polarizados comunes y de seguridad.</li>
                 <li>Laminas con tonalidad media y clara.</li>
               </ul>
+              <div class="valor">
+                <h3>Valor: $</h3>
+                <h3 class="precioPolarizadoOroch">10000</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <button type="button" id="botonAgregar" class="botonPolarizadoOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="genericos\kits.jpg">
@@ -325,10 +418,15 @@
                   <li>Botiquín.</li>
                   <li>Balizas reflectivas con base.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioKitOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonKitOroch">Agregar al carrito</button>
       </article>
       <article>
         <img src="genericos\k3.jpg">
@@ -346,10 +444,15 @@
                   <li>Línea de guía.</li>
                   <li>Brillo adaptable.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioCamaraOroch">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonCamaraOroch">Agregar al carrito</button>
       </article>
     </main>
     <div class="mensajew">
