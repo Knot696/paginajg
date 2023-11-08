@@ -16,6 +16,7 @@ let telefono = document.querySelector('#telefono');
 let email = document.querySelector('#email');
 let envioFormu = document.querySelector('#envioFormu');
 let mensajeEnvio = document.querySelector('.mensajeEnvio');
+let flecha = document.querySelector('.flecha');
 //ALASKAN
 let botonJaulaNegra = document.querySelector('.botonJaulaNegra');
 let botonJaulaCromada = document.querySelector('.botonJaulaCromada');
@@ -159,6 +160,34 @@ let precioPolarizadoLogan = document.querySelector('.precioPolarizadoLogan');
 let precioKitLogan = document.querySelector('.precioKitLogan');
 let precioCamaraLogan = document.querySelector('.precioCamaraLogan');
 let precioChaponLogan = document.querySelector('.precioChaponLogan');
+//SANDERO
+let botonSensoresSandero = document.querySelector('.botonSensoresSandero');
+let botonTornillosSandero = document.querySelector('.botonTornillosSandero');
+let botonPolarizadoSandero = document.querySelector('.botonPolarizadoSandero');
+let botonKitSandero = document.querySelector('.botonKitSandero');
+let botonCamaraSandero = document.querySelector('.botonCamaraSandero');
+let botonChaponSandero = document.querySelector('.botonChaponSandero');
+let precioSensoresSandero = document.querySelector('.precioSensoresSandero');
+let precioTornillosSandero = document.querySelector('.precioTornillosSandero');
+let precioPolarizadoSandero = document.querySelector('.precioPolarizadoSandero');
+let precioKitSandero = document.querySelector('.precioKitSandero');
+let precioCamaraSandero = document.querySelector('.precioCamaraSandero');
+let precioChaponSandero = document.querySelector('.precioChaponSandero');
+//STEPWAY
+let botonPortaStepway = document.querySelector('.botonPortaStepway');
+let botonSensoresStepway = document.querySelector('.botonSensoresStepway');
+let botonTonillosStepway = document.querySelector('.botonTonillosStepway');
+let botonPolarizadoStepway = document.querySelector('.botonPolarizadoStepway');
+let botonKitStepway = document.querySelector('.botonKitStepway');
+let botonCamaraStepway = document.querySelector('.botonCamaraStepway');
+let botonChaponStepway = document.querySelector('.botonChaponStepway');
+let precioPortaStepway = document.querySelector('.precioPortaStepway');
+let precioSensoresStepway = document.querySelector('.precioSensoresStepway');
+let precioTonillosStepway = document.querySelector('.precioTonillosStepway');
+let precioPolarizadoStepway = document.querySelector('.precioPolarizadoStepway');
+let precioKitStepway = document.querySelector('.precioKitStepway');
+let precioCamaraStepway = document.querySelector('.precioCamaraStepway');
+let precioChaponStepway = document.querySelector('.precioChaponStepway');
 
 let total=0;
 let contadorCarrito = 0;
@@ -257,6 +286,7 @@ class Items{
     this.imgItem.classList.add('imgArt');
     this.eliminarItem.classList.add('eliminarItems');
     this.eliminarItem.src = 'items/x.png';
+    flecha.classList.add('flecha1');
     totalCarrito.innerText = '$'+total;
     inputMontoOculto.value = totalCarrito.innerText;
     contador.innerText=contadorCarrito += 1;

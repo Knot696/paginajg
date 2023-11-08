@@ -44,13 +44,25 @@
     width: 90%;
     height: 90vh;
     border-radius: 5px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
     background-color: white;
     z-index: 2;
     box-shadow: 0 0 100vh 100vh rgba(0, 0, 0, 0.8);
     transition: 0.5s;
     animation: aparecer 0.3s;
     overflow-Y: scroll;
-    border-top: 5px solid white;
+  }
+  .flecha{
+    display: none;
+  }
+  .flecha1{
+    display: block;
+    position: fixed;
+    top: 42px;
+    right: 8px;
+    z-index: 3;
+    animation: flecha 2s forwards;
   }
   .tituloCarrito{
     font-size: 2rem;
@@ -176,6 +188,20 @@
     }
     100%{
       opacity: 0%;
+    }
+  }
+  @keyframes flecha{
+    0%{
+      opacity: 0%;
+      top: 60px;
+    }
+    50%{
+      opacity: 100%;
+      top: 47px;
+    }
+    100%{
+      opacity: 0%;
+      top: 42px;
     }
   }
   @media (min-width: 800px) {

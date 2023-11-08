@@ -21,6 +21,44 @@
     <title>Accesorios Renault Sandero</title>
   </head>
   <body>
+    <div class="carrito">
+      <h3 class="tituloCarrito">CARRITO</h3>
+      <img class="cierreCarrito" src="items\x1.png">
+      <div class="itemsCarrito"></div>
+      <div class="baseCarrito">
+        <h2>Total:</h2>
+        <h2 class="totalCarrito">$0</h2>
+        <button class="realizarPedido">Realizar pedido</button>
+      </div>
+    </div>
+    <div class="formulario">
+      <h3 class="tituloCarrito">Datos cliente</h3>
+      <img class="cierreFormulario" src="items\x1.png">
+      <form class="formulario1" action="https://formsubmit.co/aleknot.696@gmail.com" method="post">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="name" minlength="2" maxlength="15">
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="family-name" minlength="2" maxlength="15">
+        <label for="telefono">Telefono</label>
+        <input id="telefono" name="telefono" type="tel">
+        <label for="email">Email</label>
+        <input id="email" name="email" min="5" type="email">
+        <label class="labelOculto" for="modelo">Modelo</label>
+        <input class="inputModeloOculto" name="modelo" id="modelo" type="text" value="ALASKAN">
+        <label class="labelOculto" for="accesorios">Accesorios</label>
+        <input class="inputAccesorioOculto" name="accesorios" id="accesorios" type="text">
+        <label class="labelOculto" for="monto">Monto total</label>
+        <input class="inputMontoOculto" name="monto" id="monto" type="text">
+        <button id="envioFormu" class="realizarPedido">Enviar</button>
+        <input type="hidden" name="_next" value="http://knot696.online/">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+      <div class="mensajeEnvio">
+        <img src="items\check.png">
+        <h3>Pedido realizado correctamente</h3>
+        <h6>En breve nos comunicaremos con usted para finalizar su pedido.</h6>
+      </div>
+    </div>
     <header>
       <nav>
         <a class="menu" href="#desplegable"><img src="items\menu.png"></a>
@@ -99,10 +137,15 @@
                   <li>Regulación de distancia de alerta.</li>
                   <li>Activa al colocar reversa.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioSensoresSandero">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonSensoresSandero">Agregar al carrito</button>
       </article>
       <article>
         <img src="genericos\k9.jpg">
@@ -119,10 +162,15 @@
                   <li>Kit 4 tornillos de seguridad con llave especial.</li>
                   <li>Evita la manipulación de llantas con herramientas convencionales.</li>
                 </ul>
+                <div class="valor">
+                  <h3>Valor: $</h3>
+                  <h3 class="precioTornillosSandero">10000</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button type="button" id="botonAgregar" class="botonTornillosSandero">Agregar al carrito</button>
       </article>
     <article>
       <img src="genericos\pola.jpg">
@@ -139,10 +187,15 @@
                 <li>Polarizados comunes y de seguridad.</li>
                 <li>Laminas con tonalidad media y clara.</li>
               </ul>
+              <div class="valor">
+                <h3>Valor: $</h3>
+                <h3 class="precioPolarizadoSandero">10000</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <button type="button" id="botonAgregar" class="botonPolarizadoSandero">Agregar al carrito</button>
     </article>
     <article>
       <img src="genericos\kits.jpg">
@@ -161,10 +214,15 @@
                 <li>Botiquín.</li>
                 <li>Balizas reflectivas con base.</li>
               </ul>
+              <div class="valor">
+                <h3>Valor: $</h3>
+                <h3 class="precioKitSandero">10000</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <button type="button" id="botonAgregar" class="botonKitSandero">Agregar al carrito</button>
     </article>
     <article>
       <img src="genericos\k3.jpg">
@@ -182,10 +240,15 @@
                 <li>Línea de guía.</li>
                 <li>Brillo adaptable.</li>
               </ul>
+              <div class="valor">
+                <h3>Valor: $</h3>
+                <h3 class="precioCamaraSandero">10000</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <button type="button" id="botonAgregar" class="botonCamaraSandero">Agregar al carrito</button>
     </article>
     <article>
       <img src="sandero\s1.jpg">
@@ -204,10 +267,15 @@
                 <li>Pintados negro con poliéster en polvo.</li>
                 <li>Anclaje totalmente al chasis.</li>
               </ul>
+              <div class="valor">
+                <h3>Valor: $</h3>
+                <h3 class="precioChaponSandero">10000</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <button type="button" id="botonAgregar" class="botonChaponSandero">Agregar al carrito</button>
     </article>
   </main>
     <div class="mensajew">
