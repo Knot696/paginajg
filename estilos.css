@@ -29,22 +29,12 @@ header{
   justify-content: space-between;
   z-index: 1;
 }
-header img{
-  margin-left: 2%;
-  margin-right: 2%;
-  height: 70%;
-}
-nav{
-  margin-top: 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  height: 35px;
-  width: auto;
-}
 .menu img{
   width: 25px;
   height: auto;
   animation: menu 10s infinite;
+  cursor: pointer;
+  margin-left: 5px;
 }
 #desplegable{
   display: flex;
@@ -93,7 +83,6 @@ nav{
   display: none
 }
 .logo{
-  margin-right: 5px;
   height: 30px;
   width: auto;
 }
@@ -186,13 +175,16 @@ main img{
   border-bottom-right-radius: 10px;
   box-shadow: 0 0 5px 2px black;
   animation: cabi 10s forwards;
+  z-index: 0;
 }
 footer{
+  position: relative;
   background-color: black;
   border: 15px solid black;
   height: auto;
   width: auto;
   text-align: center;
+  z-index: 5;
 }
 h1{
   font-family: "Nouvelxb";
@@ -318,10 +310,15 @@ p{
   .nav2{
     display: flex;
     flex-direction: row;
-    width: 85%;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    gap: 10px;
+    width: 85%;
     height: 40px;
+  }
+  .logo1{
+    margin-left: 5px;
+    height: 80%;
   }
   #vehiculos, #redes{
     display: flex;
@@ -388,5 +385,8 @@ p{
 @media (min-width: 950px) {
   .imgPresentacion{
     width: 60%
+  }
+  .logo1{
+    height: 100%;
   }
 }
