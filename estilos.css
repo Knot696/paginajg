@@ -42,6 +42,8 @@ nav{
   width: auto;
 }
 .menu img{
+  width: 25px;
+  height: auto;
   animation: menu 10s infinite;
 }
 #desplegable{
@@ -211,10 +213,11 @@ h3{
 }
 h4{
   font-family: "Nouvelxb";
+  font-size: 1.1rem;
   background-color: rgb(243, 222, 53);
   text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
+  width: 95%;
+  margin-bottom: 5px;
   margin-top: 20px;
 }
 ul{
