@@ -309,6 +309,10 @@ p{
   }
   .imgPresentacion, .imgPresentacion1{
     margin-top: 50px;
+    width: 70%
+  }
+  .imgPresentacion1{
+    width: 100%
   }
   .nav2{
     display: flex;
@@ -386,7 +390,7 @@ p{
 }
 @media (min-width: 950px) {
   main{
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     column-gap: 3%;
     margin: 2%;
   }
@@ -398,5 +402,9 @@ p{
   }
   .imgPresentacion, .imgPresentacion1{
     margin-top: 60px;
+    width: 60%
+  }
+  .imgPresentacion1{
+    width: 100%
   }
 }
