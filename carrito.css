@@ -106,12 +106,12 @@
   .botonCarrito{
     margin-right: 5px;
     width: 30px;
-    height: 30px;
     cursor: pointer;
   }
   .contadorCarrito{
     position: absolute;
-    top: 0px;
+    font-size: 0.8rem;
+    top: 3px;
     right: 13px;
     text-align: justify;
   }
@@ -204,15 +204,25 @@
       top: 42px;
     }
   }
-  @media (min-width: 800px) {
+  @media (min-width: 760px) {
     .botonCarrito{
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
+      width: 40px;
     }
     .contadorCarrito{
       position: absolute;
+      font-size: 1rem;
       top: 5px;
       right: 15px;
+    }
+  }
+  @media (min-width: 950px) {
+    .botonCarrito{
+      width: 45px;
+    }
+    .contadorCarrito{
+      position: absolute;
+      font-size: 1.2rem;
+      top: 7px;
+      right: 16px;
     }
   }

@@ -48,6 +48,7 @@ header{
   z-index: 1;
   cursor: default;
   transition: 0.5s;
+  padding-bottom: 5px;
 }
 #desplegable:target{
   box-shadow: 100vh 0px 1px 100vh rgba(0, 0, 0, 0.8);
@@ -73,7 +74,7 @@ header{
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-  margin-bottom: 20px;
+  align-items: center
 }
 .redes img{
   height: 30px;
@@ -83,8 +84,8 @@ header{
   display: none
 }
 .logo{
-  height: 30px;
-  width: auto;
+  margin: 3px;
+  height: 80%;
 }
 .imgPresentacion{
   display: flex;
@@ -103,6 +104,7 @@ header{
   animation: cab 3s forwards;
 }
 .bajoCabecera{
+  top: 40px;
   width: 100%;
   background-color: black;
   margin-bottom: 20px;
@@ -138,7 +140,6 @@ main img{
 }
 .accordion{
   width: 100%;
-  z-index: 0;
 }
 .accordion h2{
   color: black;
@@ -221,7 +222,6 @@ a{
   color: white;
   text-decoration: none;
   position: relative;
-  margin-top: 5px;
   transition: 0.2s;
 }
 a:hover{
@@ -294,7 +294,7 @@ p{
     margin: 2%;
   }
 }
-@media (min-width: 740px) {
+@media (min-width: 760px) {
   main{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 5%;
@@ -307,14 +307,16 @@ p{
     top: 50px;
     border-top: 1px solid white;
   }
+  .imgPresentacion, .imgPresentacion1{
+    margin-top: 50px;
+  }
   .nav2{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-    width: 85%;
-    height: 40px;
+    width: 90%;
+    height: 100%;
   }
   .logo1{
     margin-left: 5px;
@@ -383,10 +385,18 @@ p{
   }
 }
 @media (min-width: 950px) {
-  .imgPresentacion{
-    width: 60%
+  main{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 3%;
+    margin: 2%;
   }
-  .logo1{
-    height: 100%;
+  header{
+    height: 60px;
+  }
+  #vehiculos:target, #redes:target, #ubicacion:target{
+    top: 60px;
+  }
+  .imgPresentacion, .imgPresentacion1{
+    margin-top: 60px;
   }
 }
