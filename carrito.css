@@ -110,7 +110,7 @@
   }
   .contadorCarrito{
     position: absolute;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     top: 3px;
     right: 13px;
     text-align: justify;
@@ -205,24 +205,17 @@
     }
   }
   @media (min-width: 760px) {
-    .botonCarrito{
-      width: 40px;
-    }
     .contadorCarrito{
       position: absolute;
-      font-size: 1rem;
-      top: 5px;
-      right: 15px;
+      font-size: 0.9rem;
+      top: 8px;
+      right: 13px;
     }
   }
   @media (min-width: 950px) {
-    .botonCarrito{
-      width: 45px;
-    }
     .contadorCarrito{
       position: absolute;
-      font-size: 1.2rem;
-      top: 7px;
-      right: 16px;
+      top: 12px;
+      right: 13px;
     }
   }

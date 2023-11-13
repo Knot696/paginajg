@@ -395,7 +395,10 @@ p{
     margin: 2%;
   }
   header{
-    height: 60px;
+    height: 55px;
+  }
+  .logo1{
+    height: 70%;
   }
   #vehiculos:target, #redes:target, #ubicacion:target{
     top: 60px;
