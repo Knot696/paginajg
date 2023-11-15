@@ -351,14 +351,12 @@ p{
     position: absolute;
     left: -2000px;
     top: 50px;
-    height: 200px;
+    height: 300px;
     width: 100%;
-    background-color: white;
-    padding-left: 20px;
+    padding-left: 10%;
     padding-right: 20px;
     z-index: 1;
     transition: 0.5s;
-    border-bottom: 1px solid;
   }
   #vehiculos:target, #ubicacion:target, #redes:target{
     left: 0px;
@@ -376,9 +374,10 @@ p{
   }
   .gmap_canvas{
     overflow: hidden;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    width: 50%;
+    border: 1px solid black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 90%;
     height: 100%;
   }
   nav{
