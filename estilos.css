@@ -397,6 +397,9 @@ p{
   header{
     height: 60px;
   }
+  #vehiculos, #redes, #ubicacion{
+    top: 60px;
+  }
   #vehiculos:target, #redes:target, #ubicacion:target{
     top: 60px;
   }

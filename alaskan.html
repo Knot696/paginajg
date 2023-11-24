@@ -1,739 +1,148 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Accesorios originales y Bracco para Renault Alaskan">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BE93RSXG4"></script>
-    <script>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accesorios originales y Bracco para Renault Duster">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BE93RSXG4"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-3BE93RSXG4');
-    </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script defer type="text/javascript" src="main.js"></script>
-    <script defer type="text/javascript" src="alaskan.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="carrito.css">
-    <link rel="icon" href="items\1.ico">
-    <title>Accesorios Renault Alaskan</title>
-  </head>
-  <body>
-    <div class="carrito">
-      <h3 class="tituloCarrito">CARRITO</h3>
-      <img class="cierreCarrito" src="items\x1.png">
-      <div class="itemsCarrito"></div>
-      <div class="baseCarrito">
-        <h2>Total:</h2>
-        <h2 class="totalCarrito">$0</h2>
-        <button class="realizarPedido">Realizar pedido</button>
+  </script>
+  <script defer type="text/javascript" src="main.js"></script>
+  <script defer type="text/javascript" src="alaskan.js"></script>
+  <script type="text/javascript" src="articulos.js"></script>
+  <script defer type="text/javascript" src="indexAlaskan.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="carrito.css">
+  <link rel="icon" href="items\1.ico">
+  <title>Accesorios Renault Duster</title>
+</head>
+
+<body>
+  <div class="carrito">
+    <h3 class="tituloCarrito">CARRITO</h3>
+    <img class="cierreCarrito" src="items\x1.png">
+    <div class="itemsCarrito"></div>
+    <div class="baseCarrito">
+      <h2>Total:</h2>
+      <h2 class="totalCarrito">$0</h2>
+      <button class="realizarPedido">Realizar pedido</button>
+    </div>
+  </div>
+  <div class="formulario">
+    <h3 class="tituloCarrito">Datos cliente</h3>
+    <img class="cierreFormulario" src="items\x1.png">
+    <form class="formulario1" action="https://formsubmit.co/aleknot.696@gmail.com" method="post">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="name" minlength="2" maxlength="15">
+      <label for="apellido">Apellido</label>
+      <input id="apellido" name="apellido" type="family-name" minlength="2" maxlength="15">
+      <label for="telefono">Telefono</label>
+      <input id="telefono" name="telefono" type="tel">
+      <label for="email">Email</label>
+      <input id="email" name="email" min="5" type="email">
+      <label class="labelOculto" for="modelo">Modelo</label>
+      <input class="inputModeloOculto" name="modelo" id="modelo" type="text" value="ALASKAN">
+      <label class="labelOculto" for="accesorios">Accesorios</label>
+      <input class="inputAccesorioOculto" name="accesorios" id="accesorios" type="text">
+      <label class="labelOculto" for="monto">Monto total</label>
+      <input class="inputMontoOculto" name="monto" id="monto" type="text">
+      <button id="envioFormu" class="realizarPedido">Enviar</button>
+      <input type="hidden" name="_next" value="http://knot696.online/">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+    <div class="mensajeEnvio">
+      <img src="items\check.png">
+      <h3>Pedido realizado correctamente</h3>
+      <h6>En breve nos comunicaremos con usted para finalizar su pedido.</h6>
+    </div>
+  </div>
+  <header>
+    <nav>
+      <a class="menu" href="#desplegable"><img src="items\menu.png"></a>
+      <div id="desplegable">
+        <div class="cierre">
+          <a href="index.html">Algunos de nuestros trabajos</a>
+          <a href="#"><img src="items\x.png"></a>
+        </div>
+        <h4>ACCESORIOS POR VEHÍCULOS</h4>
+        <a href="alaskan.html">Alaskan</a>
+        <a href="kangoo.html">Kangoo II</a>
+        <a href="duster.html">Duster</a>
+        <a href="oroch.html">Oroch</a>
+        <a href="sandero.html">Sandero</a>
+        <a href="stepway.html">Stepway</a>
+        <a href="logan.html">Logan</a>
+        <h4>DONDE NOS ENCONTRÁS</h4>
+        <iframe class="gmap_canvas" width="100%" height="100%"
+          src="https://maps.google.com/maps?q=avenida+juan+omingo+peron+1452%2C+monte+maiz%2C+cordoba%2C+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <h4>NUESTRAS REDES</h4>
+        <div class="redes">
+          <a href="https://www.facebook.com/jorgegiorgiaccesorios/"><img src="items\logoface.png"></a>
+          <a href="https://www.instagram.com/jorgegiorgiservicios/" target="_blank"><img src="items\logoinsta.png"></a>
+          <a href="https://www.jorgegiorgi.com/" target="_blank"><img src="items\logoweb.png"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav2">
+      <img class="logo1" src="items\logo.png">
+      <a href="index.html">ACCESORIOS COLOCADOS</a>
+      <a href="#vehiculos">VEHÍCULOS</a>
+      <div id="vehiculos">
+        <a href="alaskan.html"><img src="items\autos\alaskan.png"></a>
+        <a href="kangoo.html"><img src="items\autos\kangoo.png"></a>
+        <a href="duster.html"><img src="items\autos\duster.png"></a>
+        <a href="oroch.html"><img src="items\autos\oroch.png"></a>
+        <a href="sandero.html"><img src="items\autos\sandero.png"></a>
+        <a href="stepway.html"><img src="items\autos\stepway.png"></a>
+        <a href="logan.html"><img src="items\autos\logan.png"></a>
+        <a id="cierre" href="#"><img src="items\x1.png"></a>
+      </div>
+      <a href="#ubicacion">UBICACIÓN</a>
+      <div id="ubicacion">
+        <iframe class="gmap_canvas"
+          src="https://maps.google.com/maps?q=avenida+juan+omingo+peron+1452%2C+monte+maiz%2C+cordoba%2C+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <a id="cierre" href="#"><img src="items\x1.png"></a>
+      </div>
+      <a href="#redes">REDES</a>
+      <div id="redes">
+        <a href="https://www.facebook.com/jorgegiorgiaccesorios/" target="_blank"><img src="items\logoface1.png"></a>
+        <a href="https://www.instagram.com/jorgegiorgiservicios/" target="_blank"><img src="items\logoinsta1.png"></a>
+        <a href="https://www.jorgegiorgi.com/" target="_blank"><img src="items\logoweb1.png"></a>
+        <a id="cierre" href="#"><img src="items\x1.png"></a>
       </div>
     </div>
-    <div class="formulario">
-      <h3 class="tituloCarrito">Datos cliente</h3>
-      <img class="cierreFormulario" src="items\x1.png">
-      <form class="formulario1" action="https://formsubmit.co/aleknot.696@gmail.com" method="post">
-        <label for="nombre">Nombre</label>
-        <input id="nombre" name="nombre" type="name" minlength="2" maxlength="15">
-        <label for="apellido">Apellido</label>
-        <input id="apellido" name="apellido" type="family-name" minlength="2" maxlength="15">
-        <label for="telefono">Telefono</label>
-        <input id="telefono" name="telefono" type="tel">
-        <label for="email">Email</label>
-        <input id="email" name="email" min="5" type="email">
-        <label class="labelOculto" for="modelo">Modelo</label>
-        <input class="inputModeloOculto" name="modelo" id="modelo" type="text" value="ALASKAN">
-        <label class="labelOculto" for="accesorios">Accesorios</label>
-        <input class="inputAccesorioOculto" name="accesorios" id="accesorios" type="text">
-        <label class="labelOculto" for="monto">Monto total</label>
-        <input class="inputMontoOculto" name="monto" id="monto" type="text">
-        <button id="envioFormu" class="realizarPedido">Enviar</button>
-        <input type="hidden" name="_next" value="http://knot696.online/">
-        <input type="hidden" name="_captcha" value="false">
-      </form>
-      <div class="mensajeEnvio">
-        <img src="items\check.png">
-        <h3>Pedido realizado correctamente</h3>
-        <h6>En breve nos comunicaremos con usted para finalizar su pedido.</h6>
-      </div>
+    <img class="logo" src="items\logo.png">
+    <div>
+      <p class="contadorCarrito">0</p>
+      <img class="botonCarrito" src="items\carrito.png">
     </div>
-    <header>
-      <nav>
-        <a class="menu" href="#desplegable"><img src="items\menu.png"></a>
-        <div id="desplegable">
-          <div class="cierre">
-            <a href="index.html">Algunos de nuestros trabajos</a>
-            <a href="#"><img src="items\x.png"></a>
-          </div>
-          <h4>ACCESORIOS POR VEHÍCULOS</h4>
-          <a href="alaskan.html">Alaskan</a>
-          <a href="kangoo.html">Kangoo II</a>
-          <a href="duster.html">Duster</a>
-          <a href="oroch.html">Oroch</a>
-          <a href="sandero.html">Sandero</a>
-          <a href="stepway.html">Stepway</a>
-          <a href="logan.html">Logan</a>
-          <h4>DONDE NOS ENCONTRÁS</h4>
-          <iframe class="gmap_canvas" width="100%" height="100%" src="https://maps.google.com/maps?q=avenida+juan+omingo+peron+1452%2C+monte+maiz%2C+cordoba%2C+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          <h4>NUESTRAS REDES</h4>
-          <div class="redes">
-            <a href="https://www.facebook.com/jorgegiorgiaccesorios/"><img src="items\logoface.png"></a>
-            <a href="https://www.instagram.com/jorgegiorgiservicios/" target="_blank"><img src="items\logoinsta.png"></a>
-            <a href="https://www.jorgegiorgi.com/" target="_blank"><img src="items\logoweb.png"></a>
-          </div>
-        </div>
-      </nav>
-      <div class="nav2">
-        <img class="logo1" src="items\logo.png">
-        <a href="index.html">ACCESORIOS COLOCADOS</a>
-        <a href="#vehiculos">VEHÍCULOS</a>
-        <div id="vehiculos">
-          <a href="alaskan.html"><img src="items\autos\alaskan.png"></a>
-          <a href="kangoo.html"><img src="items\autos\kangoo.png"></a>
-          <a href="duster.html"><img src="items\autos\duster.png"></a>
-          <a href="oroch.html"><img src="items\autos\oroch.png"></a>
-          <a href="sandero.html"><img src="items\autos\sandero.png"></a>
-          <a href="stepway.html"><img src="items\autos\stepway.png"></a>
-          <a href="logan.html"><img src="items\autos\logan.png"></a>
-          <a id="cierre" href="#"><img src="items\x1.png"></a>
-        </div>
-        <a href="#ubicacion">UBICACIÓN</a>
-        <div id="ubicacion">
-          <iframe class="gmap_canvas" src="https://maps.google.com/maps?q=avenida+juan+omingo+peron+1452%2C+monte+maiz%2C+cordoba%2C+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          <a id="cierre" href="#"><img src="items\x1.png"></a>
-        </div>
-        <a href="#redes">REDES</a>
-        <div id="redes">
-          <a href="https://www.facebook.com/jorgegiorgiaccesorios/" target="_blank"><img src="items\logoface1.png"></a>
-          <a href="https://www.instagram.com/jorgegiorgiservicios/" target="_blank"><img src="items\logoinsta1.png"></a>
-          <a href="https://www.jorgegiorgi.com/" target="_blank"><img src="items\logoweb1.png"></a>
-          <a id="cierre" href="#"><img src="items\x1.png"></a>
-        </div>
-      </div>
-      <img class="logo" src="items\logo.png">
-      <div>
-        <p class="contadorCarrito">0</p>
-        <img class="botonCarrito" src="items\carrito.png">
-      </div>
-    </header>
-    <img class="flecha" src="items\flecha.png">
-    <img class="imgPresentacion" src="cabeceras\alaskan.jpg">
-    <div class="bajoCabecera"><h1>ACCESORIOS ALASKAN</h1></div>
-    <main>
-      <article>
-        <img src="alaskan\1.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>JAULA NEGRA</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Jaula caño tubular simple.</li>
-                  <li>Base para lona marítima.</li>
-                  <li>Bulonería con tratamiento anticorrosión.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioJaulaNegra">250600</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonJaulaNegra">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\2.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>JAULA CROMADA</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Jaula cromada caño tubular simple.</li>
-                  <li>Base para lona marítima.</li>
-                  <li>Bulonería con tratamiento anticorrosión.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioJaulaCromada">344200</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonJaulaCromada">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\4.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>LONA MARITIMA</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Manija apertura con cable de acero.</li>
-                  <li>Cierre con resorte.</li>
-                  <li>Grampa de fijación con bulón oculto.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioLonaAlaskan">182900</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonLonaAlaskan">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\5.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>COBERTOR</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Plástico termoformado resistente al sol y productos químicos.</li>
-                  <li>Textura antideslizante de fácil limpieza.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioCobertor">182200</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonCobertor">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\18.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>DEFLECTORES LLUVIA</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Acrilico resistente.</li>
-                  <li>Adhesivo .</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioDeflectorAlaskan">69000</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonDeflectoresAlaskan">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\19.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>KIT FENDERS</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Plástico termoformado resistente al sol y productos químicos.</li>
-                  <li>Incluye kit limpiador de superficie para adhesivo.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioKitFenderAlaskan">381800</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonFendersAlaskan">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\20.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>PROTECCION FRONTAL</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Plástico termoformado resistente al sol y productos químicos.</li>
-                  <li>Textura antideslizante de fácil limpieza.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioProteccionAlaskan">213400</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonProteccionAlaskan">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\22.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>TUERCAS DE SEGURIDAD</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Kit 4 tuercas de seguridad con llave especial.</li>
-                  <li>Evita la manipulación de llantas con herramientas convencionales.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioTuercas">56500</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonTuercas">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="genericos\pola.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>POLARIZADOS</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Polarizados comunes y de seguridad.</li>
-                  <li>Laminas con tonalidad media y clara.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioPolarizado">47300</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonPolarizados">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="genericos\k8.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>SENSORES DE ESTACIONAMIENTO</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Alerta sonora al acercarse a un objeto.</li>
-                  <li>Regulación de distancia de alerta.</li>
-                  <li>Activa al colocar reversa.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioSensores">101700</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonSensores">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\3.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>TALAMPAYA INOXIDABLE</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Estructura de caño en una sola pieza acero inoxidable.</li>
-                  <li>Terminación pulido espejo.</li>
-                  <li>No sobrepasa la línea del paragolpes.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioTalampayaInox">227400</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonTalampayaInox">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\6.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>TALAMPAYA NEGRA</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Estructura de caño en una sola pieza.</li>
-                  <li>Terminación pulido espejo.</li>
-                  <li>No sobrepasa la línea del paragolpes.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioTalampayaNegra">156600</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonTalampayaNegra">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\14.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>ENGANCHE REFORZADO MAXITRACK</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Bastidor de caño 60×60 x3,2 de espesor.</li>
-                  <li>Pintados negro con poliester en polvo.</li>
-                  <li>Anclaje totalmente al chasis.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioEngancheReforzado">214000</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonEngancheReforzado">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\16.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>ENGANCHE COMUN</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Bastidor de caño 40×40 x3,2 de espesor.</li>
-                  <li>Pintados negro con poliéster en polvo.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioEngancheComun">159000</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonEngancheComun">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\9.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>JAULA CAÑO DOBLE INOXIDABLE</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Tubos de acero inoxidable.</li>
-                  <li>Terminación pulido espejo.</li>
-                  <li>Bases para todo tipo de lona.</li>
-                  <li>Bulonería con tratamiento anticorrosión.</li>
-                  <li>Laterales de chapa estampada.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioJaulaCañoDobleInox">376400</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonJaulaCañoDobleInox">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\11.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>JAULA CAÑO DOBLE NEGRA</h3>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Tubos de acero al carbono.</li>
-                  <li>Pintada negra con poliester en polvo.</li>
-                  <li>Bases para todo tipo de lona.</li>
-                  <li>Bulonería con tratamiento anticorrosión.</li>
-                  <li>Laterales de chapa estampada.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioJaulaCañoDobleNegra">250600</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonJaulaCañoDobleNegra">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\10.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>JAULA CAÑO SIMPLE INOXIDABLE</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Tubos de acero inoxidable.</li>
-                  <li>Terminación pulido espejo.</li>
-                  <li>Bases para todo tipo de lona.</li>
-                  <li>Bulonería con tratamiento anticorrosión.</li>
-                  <li>Laterales de chapa estampada.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioJaulaCañoSimpleInox">290800</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonJaulaCañoSimpleInox">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\12.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>JAULA CAÑO SIMPLE NEGRA</h2>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Tubos de acero al carbono.</li>
-                  <li>Pintada negra con poliester en polvo.</li>
-                  <li>Bases para todo tipo de lona.</li>
-                  <li>Bulonería con tratamiento anticorrosión.</li>
-                  <li>Laterales de chapa estampada.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioJaulaCañoSimpleNegra">22400</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonJaulaCañoSimpleNegra">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\13.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>JAULA DE TRABAJO</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Jaula despiezada para fácil trasporte.</li>
-                  <li>Tubos de acero al carbono.</li>
-                  <li>Pintada negra con poliester en polvo.</li>
-                  <li>Bulonería con tratamiento anticorrosión.</li>
-                  <li>Laterales de chapa estampada.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioJaulaTrabajo">287500</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonJaulaTrabajo">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\7.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>ESTRIBOS SIMIL ORIGINAL</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Perfil de aluminio estrusado con tratamiento anodizado natural.</li>
-                  <li>Pisaderas antideslizantes y punteras de inyección plástica.</li>
-                  <li>Fijados al chasis.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioEstribosSimilOriginal">301900</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonEstribosSimilOriginal">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\15.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>ESTRIBO OVAL</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Caño de 3,5 ovalado.</li>
-                  <li>Acero inoxidable terminación pulido espejo o caño pintados negro con poliester en polvo.</li>
-                  <li>Pisaderas antideslizantes y punteras de inyección plástica.</li>
-                  <li>Fijados al chasis con soportes específicos.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioEstriboOval">362700</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonEstriboOval">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="alaskan\21.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>TAPA RIGIDA</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Componentes ensamblados y sellados con siliconas especiales.</li>
-                  <li>Resistente a las inclemencias del tiempo.</li>
-                  <li>Fácil de operar en el uso diario.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioTapa">570800</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonTapa">Agregar al carrito</button>
-      </article>
-      <article>
-        <img src="genericos\kits.jpg">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <h2>KIT SEGURIDAD</h2>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul>
-                  <li>Matafuego homologado 1kg polvo ABC.</li>
-                  <li>Pechera.</li>
-                  <li>Botiquín.</li>
-                  <li>Balizas reflectivas con base.</li>
-                </ul>
-                <div class="valor">
-                  <h3>Valor: $</h3>
-                  <h3 class="precioKit">38200</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button type="button" id="botonAgregar" class="botonKit">Agregar al carrito</button>
-      </article>
-    </main>
-    <div class="mensajew">
-      <a class="wap" href="https://api.whatsapp.com/send?phone=+543468437548&text=Hola%2C+quiero+realizar+una+consulta+sobre+un+accesorio%21" target="_blank"><img src="items\logow.png"></a>
-      <p class="mensaje">Déjenos su consulta aquí!</p>
-    </div>
-    <footer>
-      <p>Teléfonos: 03468-471876/471546 Celular: 3468-437548</p>
-      <p>Mail: jgiorgirepuestos@gmail.com</p>
-      <p>Horarios: Lunes a Viernes 08:00 a 12:00hs | Sábados 08:00 a 12:00hs</p>
-      <p>Dirección: Av. Juan Domingo Perón 1452, Monte Maíz, Cba.</p>
-    </footer>
-  </body>
+  </header>
+  <img class="flecha" src="items\flecha.png">
+  <img class="imgPresentacion" src="cabeceras\alaskan.jpg">
+  <div class="bajoCabecera">
+    <h1>ACCESORIOS ALASKAN</h1>
+  </div>
+  <main class="main">
+  </main>
+  <div class="mensajew">
+    <a class="wap"
+      href="https://api.whatsapp.com/send?phone=+543468437548&text=Hola%2C+quiero+realizar+una+consulta+sobre+un+accesorio%21"
+      target="_blank"><img src="items\logow.png"></a>
+    <p class="mensaje">Déjenos su consulta aquí!</p>
+  </div>
+  <footer>
+    <p>Teléfonos: 03468-471876/471546 Celular: 3468-437548</p>
+    <p>Mail: jgiorgirepuestos@gmail.com</p>
+    <p>Horarios: Lunes a Viernes 08:00 a 12:00hs | Sábados 08:00 a 12:00hs</p>
+    <p>Dirección: Av. Juan Domingo Perón 1452, Monte Maíz, Cba.</p>
+  </footer>
+</body>
+
 </html>
