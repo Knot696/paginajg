@@ -160,12 +160,12 @@
     color: black;
     background-color: white;
   }
-  #botonAgregar{
+  .botonAgregar{
     padding: 2px;
     border-radius: 5px;
     transition: 0.2s;
   }
-  #botonAgregar:active{
+  .botonAgregar:active{
     border-radius: 0px;
     color: white;
     background-color: black;
