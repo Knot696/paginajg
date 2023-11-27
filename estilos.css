@@ -252,11 +252,11 @@ p{
   font-family: "nouvel";
 }
 @keyframes tarjetas {
-  80%{
+  0%{
     filter: opacity(0);
     transform: scale(0%);
   }
-  100%{
+  50%{
     filter: opacity(1);
     transform: scale(100%);
   }
