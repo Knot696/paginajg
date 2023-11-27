@@ -135,7 +135,7 @@
     width: 60px;
     border-radius: 5px;
     border: 1px solid;
-    margin-left: 5px;
+    margin-left: 2px;
   }
   .info{
     display: flex;
@@ -163,6 +163,7 @@
     padding: 2px;
     border-radius: 5px;
     transition: 0.2s;
+    margin-bottom: 5px;
   }
   #botonAgregar:active{
     border-radius: 0px;
