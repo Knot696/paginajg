@@ -27,7 +27,7 @@ header{
   background-color: black;
   align-items: center;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 5;
 }
 .menu img{
   width: 25px;
@@ -93,7 +93,7 @@ header{
   margin: auto;
   margin-top: 40px;
   width: 80%;
-  animation: cab 3s forwards;
+  animation: cab 2s forwards;
 }
 .imgPresentacion1{
   display: flex;
@@ -101,7 +101,7 @@ header{
   margin: auto;
   margin-top: 40px;
   width: 100%;
-  animation: cab 3s forwards;
+  animation: cab 2s forwards;
 }
 .bajoCabecera{
   top: 40px;
@@ -123,6 +123,13 @@ article{
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  border-radius: 5px;
+  border: 2px solid;
+  justify-content: space-between;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: tarjetas;
 }
 .valor{
   display: flex;
@@ -132,16 +139,21 @@ article{
   margin: 0%;
 }
 main img{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   width: 100%;
   height: auto;
-  border-radius: 5px;
-  border: 2px solid;
-  transition: 0.3s;
 }
 .accordion{
-  width: 100%;
+  width: 98%;
+}
+.accordion:focus{
+  border-color: black;
 }
 .accordion h2{
+  width: 100%;
+  text-align: center;
+  align-items: center;
   color: black;
 }
 .wap img{
@@ -192,7 +204,7 @@ h1{
   font-size: 30px;
   color: white;
   text-align: center;
-  animation: cab 4s forwards;
+  animation: cab 3s forwards;
   line-height: 0.8;
   padding-bottom: 5px;
 }
@@ -239,6 +251,16 @@ p{
   margin-right: 20%;
   font-family: "nouvel";
 }
+@keyframes tarjetas {
+  0%{
+    filter: opacity(0);
+    transform: scale(0%);
+  }
+  100%{
+    filter: opacity(1);
+    transform: scale(100%);
+  }
+}
 @keyframes wap {
   0%{
     transform: scale(100%);
@@ -252,10 +274,10 @@ p{
 }
 @keyframes cab {
   from{
-    filter: opacity(0);
+    transform: translate(100%);
   }
   to{
-    filter: opacity(1);
+    transform: translate(0%);
   }
 }
 @keyframes cabi {
