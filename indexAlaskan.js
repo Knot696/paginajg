@@ -1,10 +1,12 @@
 const contenedorTarjetas = document.querySelector('.main')
+const cart = document.querySelector('.itemsCarrito')
 
 function crearArticulos(productos) {
   productos.forEach(producto => {
     const nuevoArticulo = document.createElement('article');
     nuevoArticulo.innerHTML = `
             <img src=${producto.imagen}>
+            <p hidden>${producto.imagen}</p>
             <h2>${producto.nombre}</h2>
             <ul>
                 <li>${producto.descripcion1}</li>
@@ -17,28 +19,43 @@ function crearArticulos(productos) {
         `
     contenedorTarjetas.appendChild(nuevoArticulo);
 
-    let productosCarrito=[];
+    let productosCarrito = [];
 
-    nuevoArticulo.addEventListener('click',e =>{
-      
-      if(e.target.classList.contains('botonAgregar')){
-        const producto = e.target.parentElement
+    nuevoArticulo.addEventListener('click', e => {
 
-        const infoProducto={
-          cantidad:1,
+      if (e.target.classList.contains('botonAgregar')) {
+        const producto = e.target.parentElement;
+
+        const infoProducto = {
+          imagen: producto.querySelector('p').innerHTML,
           nombre: producto.querySelector('h2').textContent,
-          valor: producto.querySelectorAll('h3')[1].textContent,
+          precio: producto.querySelectorAll('h3')[1].textContent,
         }
 
-        productosCarrito= [...productosCarrito, infoProducto]
+        productosCarrito = [...productosCarrito, infoProducto];
 
-        
-        
+        mostrarItemsCarrito()
       }
-      console.log(productosCarrito)
+
     })
-    
-    /* nuevoArticulo.getElementsByTagName('button')[0].addEventListener('click', () => agregarAlCarrito(producto)) */
+
+    const mostrarItemsCarrito = () => {
+
+      productosCarrito.forEach(producto => {
+  
+        const productoCarrito = document.createElement('div');
+        productoCarrito.classList.add('items');
+        productoCarrito.innerHTML = `
+        <img class='imgArt' src='${producto.imagen}'>
+        <div class='info'>
+          <p>${producto.nombre}</p>
+          <p>$${producto.precio}</p>
+        </div>
+        `
+
+        cart.append(productoCarrito)
+      })
+    }
   });
 }
 
