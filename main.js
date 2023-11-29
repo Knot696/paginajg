@@ -1,109 +1,216 @@
-let body = document.querySelector('body');
-let botonCarrito = document.querySelector('.botonCarrito');
-let carrito = document.querySelector('.carrito');
-let cierreCarrito = document.querySelector('.cierreCarrito');
-let itemsCarrito = document.querySelector('.itemsCarrito');
+const body = document.querySelector('body');
+const botonCarrito = document.querySelector('.botonCarrito');
+const carrito = document.querySelector('.carrito');
+const cierreCarrito = document.querySelector('.cierreCarrito');
+const itemsCarrito = document.querySelector('.itemsCarrito');
 let totalCarrito = document.querySelector('.totalCarrito');
-let contador = document.querySelector('.contadorCarrito');
-let realizarPedido = document.querySelector('.realizarPedido');
-let formulario = document.querySelector('.formulario');
-let cierreFormulario = document.querySelector('.cierreFormulario');
-let inputAccesorioOculto = document.querySelector('.inputAccesorioOculto');
-let inputMontoOculto = document.querySelector('.inputMontoOculto');
-let nombre = document.querySelector('#nombre');
-let apellido = document.querySelector('#apellido');
-let telefono = document.querySelector('#telefono');
-let email = document.querySelector('#email');
-let envioFormu = document.querySelector('#envioFormu');
-let mensajeEnvio = document.querySelector('.mensajeEnvio');
-let flecha = document.querySelector('.flecha');
+const contador = document.querySelector('.contadorCarrito');
+const realizarPedido = document.querySelector('.realizarPedido');
+const formulario = document.querySelector('.formulario');
+const cierreFormulario = document.querySelector('.cierreFormulario');
+const inputAccesorioOculto = document.querySelector('.inputAccesorioOculto');
+const inputMontoOculto = document.querySelector('.inputMontoOculto');
+const nombre = document.querySelector('#nombre');
+const apellido = document.querySelector('#apellido');
+const telefono = document.querySelector('#telefono');
+const email = document.querySelector('#email');
+const envioFormu = document.querySelector('#envioFormu');
+const mensajeEnvio = document.querySelector('.mensajeEnvio');
+const flecha = document.querySelector('.flecha');
+const titulo = document.querySelector('title').innerText;
 
-let total=0;
+let total = 0;
 let contadorCarrito = 0;
 
 //Apertura carrito
-function abrirCarrito(){
+function abrirCarrito() {
   carrito.classList.add('carrito1');
 }
 
-botonCarrito.addEventListener('click', ()=>{
+botonCarrito.addEventListener('click', () => {
   abrirCarrito();
 })
 
 //Cierre carrito
-function cerrarCarrito(){
+function cerrarCarrito() {
   carrito.classList.add('desaparecer');
-  function borrar(){
+  function borrar() {
     carrito.classList.remove('carrito1');
     carrito.classList.remove('desaparecer');
   }
   setTimeout(borrar, 400);
 }
 
-cierreCarrito.addEventListener('click', ()=>{
+cierreCarrito.addEventListener('click', () => {
   cerrarCarrito();
 })
 
 //Apertura formulario
-function abrirForm(){
-  if(itemsCarrito.innerHTML==''){
+function abrirForm() {
+  if (itemsCarrito.innerHTML == '') {
     alert('No hay items en el carrito')
-  }else{
-  formulario.classList.add('carrito1');
+  } else {
+    formulario.classList.add('carrito1');
   }
 }
 
-realizarPedido.addEventListener('click', ()=>{
+realizarPedido.addEventListener('click', () => {
   abrirForm();
 })
 
 //Cierre formulario
-function cierreForm(){
+function cierreForm() {
   formulario.classList.add('desaparecer');
-  function borrar(){
+  function borrar() {
     formulario.classList.remove('carrito1');
     formulario.classList.remove('desaparecer');
   }
   setTimeout(borrar, 400);
 }
 
-cierreFormulario.addEventListener('click', ()=>{
+cierreFormulario.addEventListener('click', () => {
   cierreForm();
 })
 
+//Crear tarjetas dinamicamente
+
+const contenedorTarjetas = document.querySelector('.main')
+
+function crearArticulos(productos) {
+  productos.forEach(producto => {
+    const nuevoArticulo = document.createElement('article');
+    nuevoArticulo.innerHTML = `
+            <img src=${producto.imagen}>
+            <p hidden>${producto.imagen}</p>
+            <h2>${producto.nombre}</h2>
+            <ul>
+                <li>${producto.descripcion1}</li>
+                <li>${producto.descripcion2}</li>
+                <li>${producto.descripcion3}</li>
+            </ul>
+            <div class='valor'>
+              <h3>Valor: $</h3>
+              <h3>${producto.precio}</h3>
+            </div>
+            <button class='botonAgregar'>Agregar al carrito</button>
+        `
+    contenedorTarjetas.appendChild(nuevoArticulo);
+
+    //Agregar elementos al carrito
+
+    let productosCarrito = [];
+
+    nuevoArticulo.addEventListener('click', e => {
+
+      if (e.target.classList.contains('botonAgregar')) {
+        const producto = e.target.parentElement;
+
+        const infoProducto = {
+          imagen: producto.querySelector('p').innerHTML,
+          nombre: producto.querySelector('h2').textContent,
+          precio: producto.querySelectorAll('h3')[1].textContent,
+        }
+
+        productosCarrito = [infoProducto];
+
+        const mostrarItemsCarrito = () => {
+
+          productosCarrito.forEach(producto => {
+
+            const productoCarrito = document.createElement('div');
+            productoCarrito.classList.add('items');
+            productoCarrito.innerHTML = `
+            <img class='imgArt' src='${producto.imagen}'>
+            <div class='info'>
+              <p>${producto.nombre}</p>
+              <p>$${producto.precio}</p>
+            </div>
+            <img class='eliminarItems' src='./items/x.png'>
+            `
+
+            itemsCarrito.append(productoCarrito)
+
+            total += parseInt(producto.precio);
+            totalCarrito.innerText = '$' + total;
+            console.log(totalCarrito.innerHTML)
+
+            //Eliminar items carrito
+
+            itemsCarrito.addEventListener('click', (e) => {
+              if (e.target.classList.contains('eliminarItems')) {
+                const elemento = e.target.parentElement;
+                total -= parseInt(producto.precio);
+                totalCarrito.innerText = '$' + total;
+                console.log(totalCarrito.innerHTML)
+                elemento.remove();
+
+              }
+
+            })
+
+          })
+
+        }
+
+        mostrarItemsCarrito('click')
+      }
+    })
+
+
+
+  });
+
+}
+
+if (titulo == 'Accesorios Renault Alaskan') {
+  crearArticulos(articulosAlaskan);
+} else if (titulo == 'Accesorios Renault Duster') {
+  crearArticulos(articulosDuster);
+} else if (titulo == 'Accesorios Renault Logan') {
+  crearArticulos(articulosSandero);
+} else if (titulo == 'Accesorios Renault Sandero') {
+  crearArticulos(articulosSandero);
+} else if (titulo == 'Accesorios Renault Stepway') {
+  crearArticulos(articulosStepway);
+} else if (titulo == 'Accesorios Renault Oroch') {
+  crearArticulos(articulosOroch);
+} else if (titulo == 'Accesorios Renault Kangoo II') {
+  crearArticulos(articulosKangoo);
+}
+
 //Validacion formulario
 
-	let name = /^[a-zA-ZÀ-ÿ\s]{2,40}$/ // Letras y espacios, pueden llevar acentos.
-	let correo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
-	let tel = /^\d{7,14}$/ // 7 a 14 numeros.
+let name = /^[a-zA-ZÀ-ÿ\s]{2,40}$/ // Letras y espacios, pueden llevar acentos.
+let correo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+let tel = /^\d{7,14}$/ // 7 a 14 numeros.
 
-function validacion(e){
-  if((nombre.value == '')||(name.test(nombre.value)==false)){
+function validacion(e) {
+  if ((nombre.value == '') || (name.test(nombre.value) == false)) {
     nombre.classList.add('error');
     e.preventDefault()
     return;
-  }else{
+  } else {
     nombre.classList.remove('error');
   }
-  if((apellido.value == '')||(name.test(apellido.value)==false)){
+  if ((apellido.value == '') || (name.test(apellido.value) == false)) {
     apellido.classList.add('error');
     e.preventDefault()
     return;
-  }else{
+  } else {
     apellido.classList.remove('error');
   }
-  if((telefono.value == '')||(tel.test(telefono.value)==false)){
+  if ((telefono.value == '') || (tel.test(telefono.value) == false)) {
     telefono.classList.add('error');
     e.preventDefault()
     return;
-  }else{
+  } else {
     telefono.classList.remove('error');
   }
-  if((email.value == '')||(correo.test(email.value)==false)){
+  if ((email.value == '') || (correo.test(email.value) == false)) {
     email.classList.add('error');
     e.preventDefault()
     return;
-  }else{
+  } else {
     email.classList.remove('error');
   }
   mensajeEnvio.classList.add('mensajeEnvio1');
