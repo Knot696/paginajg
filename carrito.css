@@ -1,7 +1,10 @@
-  .carrito, .formulario, .mensajeEnvio{
+  .carrito,
+  .formulario,
+  .mensajeEnvio {
     display: none;
   }
-  .mensajeEnvio1{
+
+  .mensajeEnvio1 {
     top: 100px;
     position: fixed;
     width: 70%;
@@ -16,7 +19,8 @@
     box-shadow: 0 0 100vh 100vh rgba(0, 0, 0, 0.8);
     padding: 10px;
   }
-  .formulario1{
+
+  .formulario1 {
     width: 90%;
     height: 85vh;
     background-color: white;
@@ -26,21 +30,32 @@
     justify-content: center;
     animation: aparecer 0.3s;
   }
-  .labelOculto, .inputModeloOculto, .inputAccesorioOculto, .inputMontoOculto{
+
+  .labelOculto,
+  .inputModeloOculto,
+  .inputAccesorioOculto,
+  .inputMontoOculto {
     display: none;
   }
-  input{
+
+  input {
     margin-bottom: 25px;
   }
-  input:focus{
+
+  input:focus {
     box-shadow: 0 0 5px 0px black;
   }
-  .carrito1{
+
+  .carrito1 {
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 5%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
     width: 90%;
     height: 90vh;
     border-radius: 5px;
@@ -51,12 +66,14 @@
     box-shadow: 0 0 100vh 100vh rgba(0, 0, 0, 0.8);
     transition: 0.5s;
     animation: aparecer 0.3s;
-    overflow-Y: scroll;
+    overflow-y: scroll;
   }
-  .flecha{
+
+  .flecha {
     display: none;
   }
-  .flecha1{
+
+  .flecha1 {
     display: block;
     position: fixed;
     top: 42px;
@@ -64,10 +81,12 @@
     z-index: 3;
     animation: flecha 2s forwards;
   }
-  .tituloCarrito{
+
+  .tituloCarrito {
     font-size: 2rem;
   }
-  .itemsCarrito{
+
+  .itemsCarrito {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -75,10 +94,12 @@
     align-items: center;
     padding: 10px;
   }
-  .desaparecer{
+
+  .desaparecer {
     animation: desaparecer 0.4s;
   }
-  .baseCarrito{
+
+  .baseCarrito {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -89,11 +110,15 @@
     background-color: black;
     border-radius: 5px;
   }
-  .baseCarrito, h2{
+
+  .baseCarrito,
+  h2 {
     color: white;
     margin: 0;
   }
-  .cierreCarrito, .cierreFormulario{
+
+  .cierreCarrito,
+  .cierreFormulario {
     position: fixed;
     margin-right: 10px;
     margin-top: 10px;
@@ -103,19 +128,23 @@
     cursor: pointer;
     filter: drop-shadow(0 0 2px white);
   }
-  .botonCarrito{
+
+  .botonCarrito {
     margin-right: 5px;
     width: 30px;
     cursor: pointer;
   }
-  .contadorCarrito{
+
+  .contadorCarrito {
     position: absolute;
     font-size: 0.8rem;
     top: 4px;
     right: 13px;
     text-align: justify;
+    cursor: pointer;
   }
-  .items{
+
+  .items {
     display: flex;
     align-items: center;
     text-align: center;
@@ -125,19 +154,22 @@
     background-color: black;
     border-radius: 5px;
   }
-  .eliminarItems{
+
+  .eliminarItems {
     width: 15px;
     height: 15px;
     margin-right: 5px;
     cursor: pointer;
   }
-  .imgArt{
+
+  .imgArt {
     width: 60px;
     border-radius: 5px;
     border: 1px solid;
     margin-left: 5px;
   }
-  .info{
+
+  .info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,73 +177,89 @@
     font-size: 1rem;
     width: 70%;
   }
-  .info, p{
+
+  .info,
+  p {
     margin: 0;
   }
-  .realizarPedido{
+
+  .realizarPedido {
     grid-column: 1 / 3;
     color: white;
     background-color: black;
     border: 1px solid white;
     transition: 0.3s;
   }
-  .realizarPedido:active{
+
+  .realizarPedido:active {
     color: black;
     background-color: white;
   }
-  .botonAgregar{
+
+  .botonAgregar {
     padding: 2px;
     border-radius: 5px;
     transition: 0.2s;
     margin-bottom: 5px;
   }
-  .botonAgregar:active{
+
+  .botonAgregar:active {
     border-radius: 0px;
     color: white;
     background-color: black;
   }
-  .error{
+
+  .error {
     transition: 0.5s;
     background-color: rgb(255, 183, 183);
   }
-  @keyframes aparecer{
-    0%{
+
+  @keyframes aparecer {
+    0% {
       opacity: 0%;
     }
-    100%{
+
+    100% {
       opacity: 100%;
     }
   }
-  @keyframes desaparecer{
-    0%{
+
+  @keyframes desaparecer {
+    0% {
       opacity: 100%;
     }
-    100%{
+
+    100% {
       opacity: 0%;
     }
   }
-  @keyframes flecha{
-    0%{
+
+  @keyframes flecha {
+    0% {
       opacity: 0%;
       top: 60px;
     }
-    50%{
+
+    50% {
       opacity: 100%;
       top: 47px;
     }
-    100%{
+
+    100% {
       opacity: 0%;
       top: 42px;
     }
   }
+
   @media (min-width: 760px) {
-    .contadorCarrito{
+    .contadorCarrito {
       position: absolute;
       top: 10px;
     }
   }
+
   @media (min-width: 950px) {
-    .contadorCarrito{
+    .contadorCarrito {
       position: absolute;
       top: 12px;
     }

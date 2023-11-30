@@ -27,7 +27,7 @@ header{
   background-color: black;
   align-items: center;
   justify-content: space-between;
-  z-index: 5;
+  z-index: 4;
 }
 .menu img{
   width: 25px;

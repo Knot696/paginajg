@@ -4,7 +4,7 @@ const carrito = document.querySelector('.carrito');
 const cierreCarrito = document.querySelector('.cierreCarrito');
 const itemsCarrito = document.querySelector('.itemsCarrito');
 let totalCarrito = document.querySelector('.totalCarrito');
-const contador = document.querySelector('.contadorCarrito');
+let contador = document.querySelector('.contadorCarrito');
 const realizarPedido = document.querySelector('.realizarPedido');
 const formulario = document.querySelector('.formulario');
 const cierreFormulario = document.querySelector('.cierreFormulario');
@@ -27,6 +27,9 @@ function abrirCarrito() {
   carrito.classList.add('carrito1');
 }
 
+contador.addEventListener('click', () => {
+  abrirCarrito();
+})
 botonCarrito.addEventListener('click', () => {
   abrirCarrito();
 })
@@ -132,32 +135,25 @@ function crearArticulos(productos) {
 
             total += parseInt(producto.precio);
             totalCarrito.innerText = '$' + total;
-            console.log(totalCarrito.innerHTML)
+            contadorCarrito += 1;
+            contador.innerText = contadorCarrito;
 
             //Eliminar items carrito
-
-            itemsCarrito.addEventListener('click', (e) => {
+            productoCarrito.addEventListener('click', (e) => {
               if (e.target.classList.contains('eliminarItems')) {
                 const elemento = e.target.parentElement;
                 total -= parseInt(producto.precio);
                 totalCarrito.innerText = '$' + total;
-                console.log(totalCarrito.innerHTML)
+                contadorCarrito -= 1;
+                contador.innerText = contadorCarrito;
                 elemento.remove();
-
               }
-
             })
-
           })
-
         }
-
         mostrarItemsCarrito('click')
       }
     })
-
-
-
   });
 
 }
