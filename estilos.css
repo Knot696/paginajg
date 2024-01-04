@@ -6,11 +6,7 @@
 }
 @font-face {
   font-family: "Nouvel";
-<<<<<<< HEAD
   src: url(./material/fuentes/NouvelR-Light.otf);
-=======
-  src: url(./material/fuentes/NouvelR-Book.otf);
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 }
 @font-face {
   font-family: "Nouvelb";
@@ -19,7 +15,6 @@
 @font-face {
   font-family: "Nouvelxb";
   src: url(./material/fuentes/NouvelR-Extrabold.otf);
-<<<<<<< HEAD
 }
 html{
   scroll-behavior: smooth;
@@ -27,8 +22,6 @@ html{
 body{
   font-family: 'Nouvelb', sans-serif;
   transition: 1s;
-=======
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 }
 header{
   display: flex;
@@ -41,91 +34,8 @@ header{
   align-items: center;
   justify-content: space-between;
   z-index: 4;
-<<<<<<< HEAD
   transition: 0.6s;
   padding: 5px;
-=======
-}
-.menu img{
-  width: 25px;
-  height: auto;
-  animation: menu 10s infinite;
-  cursor: pointer;
-  margin-left: 5px;
-}
-#desplegable{
-  display: flex;
-  width: 280px;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  left: -400px;
-  top: 0px;
-  background-color: black;
-  z-index: 1;
-  cursor: default;
-  transition: 0.5s;
-  padding-bottom: 5px;
-}
-#desplegable:target{
-  box-shadow: 100vh 0px 1px 100vh rgba(0, 0, 0, 0.8);
-  left: 0px;
-}
-.cierre{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.cierre img{
-  margin: 10px;
-  height: 20px;
-}
-.gmap_canvas{
-  overflow: hidden;
-  background: none !important;
-  width: 95%;
-}
-.redes{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center
-}
-.redes img{
-  height: 30px;
-  width: auto;
-}
-.nav2{
-  display: none
-}
-.logo{
-  margin: 3px;
-  height: 80%;
-}
-.imgPresentacion{
-  display: flex;
-  justify-items: center;
-  margin: auto;
-  margin-top: 40px;
-  width: 80%;
-  animation: cab 2s forwards;
-}
-.imgPresentacion1{
-  display: flex;
-  justify-items: center;
-  margin: auto;
-  margin-top: 40px;
-  width: 100%;
-  animation: cab 2s forwards;
-}
-.bajoCabecera{
-  top: 40px;
-  width: 100%;
-  background-color: black;
-  margin-bottom: 20px;
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 }
 main{
   margin: 7%;
@@ -208,23 +118,13 @@ article{
   flex-direction: column;
   align-items: center;
   gap: 10px;
-<<<<<<< HEAD
-=======
-  border-radius: 5px;
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
   border: 2px solid rgb(123, 123, 123);;
   justify-content: space-between;
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: tarjetas;
-<<<<<<< HEAD
   background-color: white;
-=======
-}
-article h2{
-  color: black;
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 }
 .sombra{
   box-shadow: 2px 0 5px 1px black;
@@ -358,7 +258,6 @@ img:active{
   gap: 5px;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 .logo{
   filter:drop-shadow(0 0 2px white);
@@ -402,34 +301,9 @@ img:active{
   margin: 10px;
 }
 .valor h3{
-<<<<<<< HEAD
   font-size: 1.3rem;
   margin: 0%;
 }
-=======
-  font-size: 1.5rem;
-  margin: 0%;
-}
-main img{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom: 1px solid;
-  width: 100%;
-  height: auto;
-}
-.accordion{
-  width: 98%;
-}
-.accordion:focus{
-  border-color: black;
-}
-.accordion h2{
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  color: black;
-}
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 .wap img{
   height: 40px;
   width: 40px;
@@ -467,82 +341,7 @@ main img{
   animation: cabi 8s forwards;
   z-index: 0;
 }
-<<<<<<< HEAD
 
-@keyframes tarjetas {
-  0%{
-    opacity: 0;
-    scale: 0%;
-  }
-  40%{
-    opacity: 1;
-    scale: 100%;
-  }
-=======
-footer{
-  position: relative;
-  background-color: black;
-  border: 15px solid black;
-  height: auto;
-  width: auto;
-  text-align: center;
-  z-index: 4;
-}
-h1{
-  font-family: "Nouvelxb";
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  animation: cab 3s forwards;
-  line-height: 0.8;
-  padding-bottom: 5px;
-}
-h2{
-  font-family: "Nouvelxb";
-  font-size: 25px;
-  text-align: center;
-}
-h3{
-    margin: 15px;
-    margin-top: 0px;
-}
-h4{
-  font-family: "Nouvelxb";
-  font-size: 1rem;
-  background-color: rgb(243, 222, 53);
-  text-align: center;
-  width: 95%;
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
-ul{
-  color: rgb(123, 123, 123);
-  margin-top: 0px;
-  line-height: 1.4;
-  width: 75%;
-}
-a{
-  color: white;
-  text-decoration: none;
-  position: relative;
-  transition: 0.2s;
-}
-a:hover{
-  color: rgb(243, 222, 53);
-}
-a img{
-  transition: 0.2s;
-}
-a img:hover{
-  filter: opacity(0.5);
-}
-p{
-  color: white;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-family: "nouvel";
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
-}
 @keyframes tarjetas {
   0%{
     opacity: 0;
@@ -593,7 +392,6 @@ p{
   }
   to{
     opacity: 100%;
-<<<<<<< HEAD
   }
 }
 @keyframes cab2 {
@@ -607,8 +405,6 @@ p{
   }
   100%{
     opacity: 60%;
-=======
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
   }
 }
 @keyframes cabi {
@@ -740,11 +536,7 @@ p{
     border: 1px solid black;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-<<<<<<< HEAD
     width: 95%;
-=======
-    width: 90%;
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
     height: 100%;
   }
   nav{
@@ -767,23 +559,12 @@ p{
     height: 55px;
   }
   .logo1{
-<<<<<<< HEAD
     height: 40px;
-=======
-    height: 70%;
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
   }
   #vehiculos:target, #redes:target, #ubicacion:target{
     top: 55px;
   }
   .imgPresentacion, .imgPresentacion1{
     margin-top: 55px;
-<<<<<<< HEAD
-=======
-    width: 60%
-  }
-  .imgPresentacion1{
-    width: 100%
->>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
   }
 }
