@@ -1,14 +1,21 @@
 const body = document.querySelector('body');
+<<<<<<< HEAD
 const header = document.querySelector('header');
 const header2 = document.querySelector('.nav2 header');
 const botonCarrito = document.querySelector('.botonCarrito');
 const botonCarrito1 = document.querySelector('.botonCarrito1');
+=======
+const botonCarrito = document.querySelector('.botonCarrito');
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 const carrito = document.querySelector('.carrito');
 const cierreCarrito = document.querySelector('.cierreCarrito');
 const itemsCarrito = document.querySelector('.itemsCarrito');
 let totalCarrito = document.querySelector('.totalCarrito');
 let contador = document.querySelector('.contadorCarrito');
+<<<<<<< HEAD
 let contador1 = document.querySelector('.contadorCarrito1');
+=======
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 const realizarPedido = document.querySelector('.realizarPedido');
 const formulario = document.querySelector('.formulario');
 const cierreFormulario = document.querySelector('.cierreFormulario');
@@ -22,6 +29,7 @@ const envioFormu = document.querySelector('#envioFormu');
 const mensajeEnvio = document.querySelector('.mensajeEnvio');
 const flecha = document.querySelector('.flecha');
 const titulo = document.querySelector('title').innerText;
+<<<<<<< HEAD
 const logo = document.querySelector('.logo');
 const menu = document.querySelector('.menu');
 const desplegable = document.querySelector('.desplegable');
@@ -33,6 +41,9 @@ window.addEventListener('scroll', ()=>{
   header2.classList.toggle('sombra', window.scrollY>0);
 })
 
+=======
+
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 let total = 0;
 let contadorCarrito = 0;
 
@@ -52,12 +63,21 @@ function abrirCarrito() {
   carrito.classList.add('carrito1');
 }
 
+<<<<<<< HEAD
 botonCarrito.addEventListener('click', () => {
   abrirCarrito();
 })
 botonCarrito1.addEventListener('click', () => {
   abrirCarrito();
 })
+=======
+contador.addEventListener('click', () => {
+  abrirCarrito();
+})
+botonCarrito.addEventListener('click', () => {
+  abrirCarrito();
+})
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 
 //Cierre carrito
 function cerrarCarrito() {
@@ -164,7 +184,10 @@ function crearArticulos(productos) {
             inputMontoOculto.value = totalCarrito.innerText;
             contadorCarrito += 1;
             contador.innerText = contadorCarrito;
+<<<<<<< HEAD
             contador1.innerText = contadorCarrito;
+=======
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 
             //Eliminar items carrito
             productoCarrito.addEventListener('click', (e) => {
@@ -176,7 +199,10 @@ function crearArticulos(productos) {
                 inputMontoOculto.value = totalCarrito.innerText;
                 contadorCarrito -= 1;
                 contador.innerText = contadorCarrito;
+<<<<<<< HEAD
                 contador1.innerText = contadorCarrito;
+=======
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
                 elemento.remove();
               }
             })
@@ -203,6 +229,7 @@ if (titulo == 'Accesorios Renault Alaskan') {
   crearArticulos(articulosOroch);
 } else if (titulo == 'Accesorios Renault Kangoo II') {
   crearArticulos(articulosKangoo);
+<<<<<<< HEAD
 }else if (titulo == 'Accesorios Peugeot 208') {
   crearArticulos(articulos208);
 } else if (titulo == 'Accesorios Peugeot 3008') {
@@ -215,6 +242,8 @@ if (titulo == 'Accesorios Renault Alaskan') {
   crearArticulos(articulosExpert);
 } else if (titulo == 'Accesorios Peugeot Boxer') {
   crearArticulos(articulosBoxer);
+=======
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
 }
 
 //Validacion formulario
@@ -223,7 +252,11 @@ let name = /^[a-zA-ZÀ-ÿ\s]{2,40}$/ // Letras y espacios, pueden llevar acentos
 let correo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 let tel = /^\d{7,14}$/ // 7 a 14 numeros.
 
+<<<<<<< HEAD
 envioFormu.addEventListener('click', (e)=>{
+=======
+function validacion(e) {
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
   if ((nombre.value == '') || (name.test(nombre.value) == false)) {
     nombre.classList.add('error');
     e.preventDefault()
@@ -253,4 +286,8 @@ envioFormu.addEventListener('click', (e)=>{
     email.classList.remove('error');
   }
   mensajeEnvio.classList.add('mensajeEnvio1');
+<<<<<<< HEAD
 })
+=======
+}
+>>>>>>> 5eec35e26e787a2d3facb4f277e38d8b16e86114
