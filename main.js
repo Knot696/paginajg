@@ -1,10 +1,14 @@
 const body = document.querySelector('body');
+const header = document.querySelector('header');
+const header2 = document.querySelector('.nav2 header');
 const botonCarrito = document.querySelector('.botonCarrito');
+const botonCarrito1 = document.querySelector('.botonCarrito1');
 const carrito = document.querySelector('.carrito');
 const cierreCarrito = document.querySelector('.cierreCarrito');
 const itemsCarrito = document.querySelector('.itemsCarrito');
 let totalCarrito = document.querySelector('.totalCarrito');
 let contador = document.querySelector('.contadorCarrito');
+let contador1 = document.querySelector('.contadorCarrito1');
 const realizarPedido = document.querySelector('.realizarPedido');
 const formulario = document.querySelector('.formulario');
 const cierreFormulario = document.querySelector('.cierreFormulario');
@@ -18,19 +22,40 @@ const envioFormu = document.querySelector('#envioFormu');
 const mensajeEnvio = document.querySelector('.mensajeEnvio');
 const flecha = document.querySelector('.flecha');
 const titulo = document.querySelector('title').innerText;
+const logo = document.querySelector('.logo');
+const menu = document.querySelector('.menu');
+const desplegable = document.querySelector('.desplegable');
+const cierreMenu = document.querySelector('.cierreMenu');
+
+//Cambio header
+window.addEventListener('scroll', ()=>{
+  header.classList.toggle('negativo', window.scrollY>0);
+  header2.classList.toggle('sombra', window.scrollY>0);
+})
 
 let total = 0;
 let contadorCarrito = 0;
+
+//Apertura menu
+
+menu.addEventListener('click', ()=>{
+  desplegable.classList.toggle('desplegableOpen')
+})
+
+//Cierre menu
+cierreMenu.addEventListener('click', ()=>{
+  desplegable.classList.toggle('desplegableOpen')
+})
 
 //Apertura carrito
 function abrirCarrito() {
   carrito.classList.add('carrito1');
 }
 
-contador.addEventListener('click', () => {
+botonCarrito.addEventListener('click', () => {
   abrirCarrito();
 })
-botonCarrito.addEventListener('click', () => {
+botonCarrito1.addEventListener('click', () => {
   abrirCarrito();
 })
 
@@ -128,24 +153,30 @@ function crearArticulos(productos) {
               <p>${producto.nombre}</p>
               <p>$${producto.precio}</p>
             </div>
-            <img class='eliminarItems' src='./items/x.png'>
+            <img class='eliminarItems' src='./material/items/x.png'>
             `
 
             itemsCarrito.append(productoCarrito)
 
             total += parseInt(producto.precio);
+            inputAccesorioOculto.value +=' +'+(producto.nombre)+'+ ';
             totalCarrito.innerText = '$' + total;
+            inputMontoOculto.value = totalCarrito.innerText;
             contadorCarrito += 1;
             contador.innerText = contadorCarrito;
+            contador1.innerText = contadorCarrito;
 
             //Eliminar items carrito
             productoCarrito.addEventListener('click', (e) => {
               if (e.target.classList.contains('eliminarItems')) {
                 const elemento = e.target.parentElement;
                 total -= parseInt(producto.precio);
+                inputAccesorioOculto.value +=' -'+(producto.nombre)+'- ';
                 totalCarrito.innerText = '$' + total;
+                inputMontoOculto.value = totalCarrito.innerText;
                 contadorCarrito -= 1;
                 contador.innerText = contadorCarrito;
+                contador1.innerText = contadorCarrito;
                 elemento.remove();
               }
             })
@@ -172,6 +203,18 @@ if (titulo == 'Accesorios Renault Alaskan') {
   crearArticulos(articulosOroch);
 } else if (titulo == 'Accesorios Renault Kangoo II') {
   crearArticulos(articulosKangoo);
+}else if (titulo == 'Accesorios Peugeot 208') {
+  crearArticulos(articulos208);
+} else if (titulo == 'Accesorios Peugeot 3008') {
+  crearArticulos(articulos3008);
+} else if (titulo == 'Accesorios Peugeot 5008') {
+  crearArticulos(articulos5008);
+} else if (titulo == 'Accesorios Peugeot Partner') {
+  crearArticulos(articulosPartner);
+} else if (titulo == 'Accesorios Peugeot Expert') {
+  crearArticulos(articulosExpert);
+} else if (titulo == 'Accesorios Peugeot Boxer') {
+  crearArticulos(articulosBoxer);
 }
 
 //Validacion formulario
@@ -180,7 +223,7 @@ let name = /^[a-zA-ZÀ-ÿ\s]{2,40}$/ // Letras y espacios, pueden llevar acentos
 let correo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 let tel = /^\d{7,14}$/ // 7 a 14 numeros.
 
-function validacion(e) {
+envioFormu.addEventListener('click', (e)=>{
   if ((nombre.value == '') || (name.test(nombre.value) == false)) {
     nombre.classList.add('error');
     e.preventDefault()
@@ -210,4 +253,4 @@ function validacion(e) {
     email.classList.remove('error');
   }
   mensajeEnvio.classList.add('mensajeEnvio1');
-}
+})

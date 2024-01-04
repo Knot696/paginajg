@@ -16,13 +16,14 @@
   <script type="text/javascript" src="articulos.js"></script>
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="carrito.css">
-  <link rel="icon" href="items\1.ico">
+  <link rel="icon" href="material\items\1.ico">
   <title>Accesorios Renault Kangoo II</title>
 </head>
+
 <body>
   <div class="carrito">
-    <h3 class="tituloCarrito">CARRITO</h3>
-    <img class="cierreCarrito" src="items\x1.png">
+    <h3 class="tituloCarrito">Carrito de compras</h3>
+    <img class="cierreCarrito" src="material\items\x1.png">
     <div class="itemsCarrito"></div>
     <div class="baseCarrito">
       <h2>Total:</h2>
@@ -32,7 +33,7 @@
   </div>
   <div class="formulario">
     <h3 class="tituloCarrito">Datos cliente</h3>
-    <img class="cierreFormulario" src="items\x1.png">
+    <img class="cierreFormulario" src="material\items\x1.png">
     <form class="formulario1" action="https://formsubmit.co/aleknot.696@gmail.com" method="post">
       <label for="nombre">Nombre</label>
       <input id="nombre" name="nombre" type="name" minlength="2" maxlength="15">
@@ -53,92 +54,103 @@
       <input type="hidden" name="_captcha" value="false">
     </form>
     <div class="mensajeEnvio">
-      <img src="items\check.png">
+      <img src="material\items\check.png">
       <h3>Pedido realizado correctamente</h3>
       <h6>En breve nos comunicaremos con usted para finalizar su pedido.</h6>
     </div>
   </div>
-  <header>
-    <nav>
-      <a class="menu" href="#desplegable"><img src="items\menu.png"></a>
-      <div id="desplegable">
-        <div class="cierre">
-          <a href="index.html">Algunos de nuestros trabajos</a>
-          <a href="#"><img src="items\x.png"></a>
-        </div>
-        <h4>ACCESORIOS POR VEHÍCULOS</h4>
-        <a href="alaskan.html">Alaskan</a>
-        <a href="kangoo.html">Kangoo II</a>
-        <a href="duster.html">Duster</a>
-        <a href="oroch.html">Oroch</a>
-        <a href="sandero.html">Sandero</a>
-        <a href="stepway.html">Stepway</a>
-        <a href="logan.html">Logan</a>
-        <h4>DONDE NOS ENCONTRÁS</h4>
-        <iframe class="gmap_canvas" width="100%" height="100%"
-          src="https://maps.google.com/maps?q=avenida+juan+omingo+peron+1452%2C+monte+maiz%2C+cordoba%2C+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        <h4>NUESTRAS REDES</h4>
-        <div class="redes">
-          <a href="https://www.facebook.com/jorgegiorgiaccesorios/"><img src="items\logoface.png"></a>
-          <a href="https://www.instagram.com/jorgegiorgiservicios/" target="_blank"><img src="items\logoinsta.png"></a>
-          <a href="https://www.jorgegiorgi.com/" target="_blank"><img src="items\logoweb.png"></a>
-        </div>
+
+  <nav>
+    <header>
+      <img class="menu" src="material\items\menu.png">
+      <img class="logo" src="material\items\logo.png">
+      <div class="botonCarrito">
+        <p class="contadorCarrito">0</p>
+        <img src="material\items\carrito.png">
       </div>
-    </nav>
-    <div class="nav2">
-      <img class="logo1" src="items\logo.png">
-      <a href="index.html">ACCESORIOS COLOCADOS</a>
-      <a href="#vehiculos">VEHÍCULOS</a>
+    </header>
+    <div class="desplegable">
+      <div class="headerMenu">
+        <a class="titulo" href="index.html">INICIO</a>
+        <img class="cierreMenu" src="material\items\x.png">
+      </div>
+      <div class="divisor"></div>
+      <div class="listaAutos">
+        <a class="titulo" href="alaskan.html">ALASKAN</a>
+        <a class="titulo" href="kangoo.html">KANGOO II</a>
+        <a class="titulo" href="duster.html">DUSTER</a>
+        <a class="titulo" href="oroch.html">OROCH</a>
+        <a class="titulo" href="sandero.html">SANDERO</a>
+        <a class="titulo" href="stepway.html">STEPWAY</a>
+        <a class="titulo" href="logan.html">LOGAN</a>
+      </div>
+      <div class="divisor"></div>
+      <iframe class="gmap_canvas" src="https://maps.google.com/maps?q=avenida+juan+omingo+peron+1452%2C+monte+maiz%2C+cordoba%2C+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      <div class="divisor"></div>
+      <div class="redes">
+        <a href="https://www.facebook.com/jorgegiorgiaccesorios/"><img src="material\items\logoface.png"></a>
+        <a href="https://www.instagram.com/jorgegiorgiservicios/"><img src="material\items\logoinsta.png"></a>
+        <a href="https://www.jorgegiorgi.com/"><img src="material\items\logoweb.png"></a>
+        <a href="tel:+5493468526804"><img src="material\items\telefono.png"></a>
+        <a href=mailto:jgiorgirepuestos@gmail.com><img src="material\items\mail.png"></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav2">
+    <header>
+      <a href="index.html"><img class="logo1" src="material\items\logo.png"></a>
+      <a class="titulo" href="renault.html">INICIO</a>
+      <a class="titulo" href="#vehiculos">VEHÍCULOS</a>
       <div id="vehiculos">
-        <a href="alaskan.html"><img src="items\autos\alaskan.png"></a>
-        <a href="kangoo.html"><img src="items\autos\kangoo.png"></a>
-        <a href="duster.html"><img src="items\autos\duster.png"></a>
-        <a href="oroch.html"><img src="items\autos\oroch.png"></a>
-        <a href="sandero.html"><img src="items\autos\sandero.png"></a>
-        <a href="stepway.html"><img src="items\autos\stepway.png"></a>
-        <a href="logan.html"><img src="items\autos\logan.png"></a>
-        <a id="cierre" href="#"><img src="items\x1.png"></a>
+        <a href="alaskan.html"><img src="material\items\autos\alaskan.png"></a>
+        <a href="kangoo.html"><img src="material\items\autos\kangoo.png"></a>
+        <a href="duster.html"><img src="material\items\autos\duster.png"></a>
+        <a href="oroch.html"><img src="material\items\autos\oroch.png"></a>
+        <a href="sandero.html"><img src="material\items\autos\sandero.png"></a>
+        <a href="stepway.html"><img src="material\items\autos\stepway.png"></a>
+        <a href="logan.html"><img src="material\items\autos\logan.png"></a>
+        <a id="cierre" href="#"><img src="material\items\x1.png"></a>
       </div>
-      <a href="#ubicacion">UBICACIÓN</a>
+      <a class="titulo" href="#ubicacion">UBICACIÓN</a>
       <div id="ubicacion">
-        <iframe class="gmap_canvas"
-          src="https://maps.google.com/maps?q=avenida+juan+omingo+peron+1452%2C+monte+maiz%2C+cordoba%2C+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        <a id="cierre" href="#"><img src="items\x1.png"></a>
+        <iframe class="gmap_canvas" src="https://maps.google.com/maps?q=avenida+juan+omingo+peron+1452%2C+monte+maiz%2C+cordoba%2C+argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <a id="cierre" href="#"><img src="material\items\x1.png"></a>
       </div>
-      <a href="#redes">REDES</a>
+      <a class="titulo" href="#redes">REDES</a>
       <div id="redes">
-        <a href="https://www.facebook.com/jorgegiorgiaccesorios/" target="_blank"><img src="items\logoface1.png"></a>
-        <a href="https://www.instagram.com/jorgegiorgiservicios/" target="_blank"><img src="items\logoinsta1.png"></a>
-        <a href="https://www.jorgegiorgi.com/" target="_blank"><img src="items\logoweb1.png"></a>
-        <a id="cierre" href="#"><img src="items\x1.png"></a>
+        <a href="https://www.facebook.com/jorgegiorgiaccesorios/" target="_blank"><img src="material\items\logoface1.png"></a>
+        <a href="https://www.instagram.com/jorgegiorgiservicios/" target="_blank"><img src="material\items\logoinsta1.png"></a>
+        <a href="https://www.jorgegiorgi.com/" target="_blank"><img src="material\items\logoweb1.png"></a>
+        <a id="cierre" href="#"><img src="material\items\x1.png"></a>
       </div>
-    </div>
-    <img class="logo" src="items\logo.png">
-    <div>
-      <p class="contadorCarrito">0</p>
-      <img class="botonCarrito" src="items\carrito.png">
-    </div>
-  </header>
-  <img class="flecha" src="items\flecha.png">
-  <img class="imgPresentacion" src="cabeceras\kangoo II.jpg">
-  <div class="bajoCabecera">
+      <div class="botonCarrito1">
+        <p class="contadorCarrito1">0</p>
+        <img src="material\items\carrito.png">
+      </div>
+    </header>
+  </div>
+
+  <div class="cabecera">
+    <img class="imgPresentacion" src="material\imagenes\cabeceras\kangoo.jpg">
     <h1>ACCESORIOS KANGOO II</h1>
   </div>
+
   <main class="main">
   </main>
   <div class="mensajew">
     <a class="wap"
-      href="https://api.whatsapp.com/send?phone=+543468437548&text=Hola%2C+quiero+realizar+una+consulta+sobre+un+accesorio%21"
-      target="_blank"><img src="items\logow.png"></a>
-    <p class="mensaje">Déjenos su consulta aquí!</p>
+      href="https://api.whatsapp.com/send?phone=+543468437548&text=Hola%2C+necesito+que+me+asesoren+sobre+los+accesorios+de+Kangoo+II%21"
+      target="_blank"><img src="material\items\logow.png"></a>
+    <p class="mensaje">1</p>
   </div>
   <footer>
-    <p>Teléfonos: 03468-471876/471546 Celular: 3468-437548</p>
-    <p>Mail: jgiorgirepuestos@gmail.com</p>
-    <p>Horarios: Lunes a Viernes 08:00 a 12:00hs | Sábados 08:00 a 12:00hs</p>
-    <p>Dirección: Av. Juan Domingo Perón 1452, Monte Maíz, Cba.</p>
+    <p>Lunes a Viernes 08:00 a 12:00hs | 16:00 a 20:00hs</p>
+    <p>Sábados 08:00 a 12:00hs</p>
+    <div class="contactos">
+      <div class="contacto"><img src="material\items\telefono.png"><p>3468-437548</p></div>
+      <div class="contacto"><img src="material\items\mail.png"><p>jgiorgirepuestos@gmail.com</p></div>
+    </div>
   </footer>
 </body>
 
