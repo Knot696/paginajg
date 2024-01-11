@@ -96,7 +96,7 @@ const articulosDuster = [
     descripcion1: 'Polarizados comunes y de seguridad.',
     descripcion2: 'Laminas con tonalidad media y clara.',
     descripcion3: 'Bloquea rayos UV protegiendo a pasajeros e interiores.',
-    precio: 69800,
+    precio: 90100,
   },
   {
     id: 12,
@@ -206,7 +206,7 @@ const articulosKangoo = [
     descripcion1: 'Polarizados comunes y de seguridad.',
     descripcion2: 'Laminas con tonalidad media y clara.',
     descripcion3: 'Bloquea rayos UV protegiendo a pasajeros e interiores.',
-    precio: 70400,
+    precio: 90100,
   },
   {
     id: 12,
@@ -316,7 +316,7 @@ const articulosOroch = [
     descripcion1: 'Polarizados comunes y de seguridad.',
     descripcion2: 'Laminas con tonalidad media y clara.',
     descripcion3: 'Bloquea rayos UV protegiendo a pasajeros e interiores.',
-    precio: 69800,
+    precio: 90100,
   },
   {
     id: 12,
@@ -363,7 +363,7 @@ const articulosSandero = [
     descripcion1: 'Polarizados comunes y de seguridad.',
     descripcion2: 'Laminas con tonalidad media y clara.',
     descripcion3: 'Bloquea rayos UV protegiendo a pasajeros e interiores.',
-    precio: 69800,
+    precio: 90100,
   },
   {
     id: 4,
@@ -410,7 +410,7 @@ const articulosStepway = [
     descripcion1: 'Polarizados comunes y de seguridad.',
     descripcion2: 'Laminas con tonalidad media y clara.',
     descripcion3: 'Bloquea rayos UV protegiendo a pasajeros e interiores.',
-    precio: 69800,
+    precio: 90100,
   },
   {
     id: 4,
