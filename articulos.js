@@ -6,7 +6,7 @@ const articulosDuster = [
     descripcion1: 'Plástico termoformado resistente al sol y productos químicos.',
     descripcion2: 'Protege carrocería en caso de colisión menor.',
     descripcion3: 'Aspecto de robustez.',
-    precio: 535300,
+    precio: 608100,
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const articulosDuster = [
     descripcion1: 'Fabricadas en hierro reforzado.',
     descripcion2: 'Fácil colocación, no requiere hacer modificaciones en el vehículo.',
     descripcion3: 'Cuenta con tapas plásticas para no dañar la carga.',
-    precio: 171500,
+    precio: 199500,
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const articulosDuster = [
     descripcion1: 'Plegable.',
     descripcion2: 'Baulera guardaobjetos.',
     descripcion3: 'Parte superior acolchada.',
-    precio: 230300,
+    precio: 257500,
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const articulosDuster = [
     descripcion1: 'Acrílico resistente',
     descripcion2: 'No permite formación de remolinos en interior del habitáculo.',
     descripcion3: 'Desvía entrada de aire protegiendo ocupantes.',
-    precio: 67100,
+    precio: 76300,
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const articulosDuster = [
     descripcion1: 'Listo para instalar.',
     descripcion2: 'Bloquea el acceso de herramientas genéricas.',
     descripcion3: 'Bloqueo del malacate de la rueda de auxilio.',
-    precio: 23800,
+    precio: 25600,
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const articulosDuster = [
     descripcion1: 'Evita la aspersión de arena, barro y piedras.',
     descripcion2: 'Incluye kit limpiador de superficie para adhesivo.',
     descripcion3: 'Reduce daños en caso de accidentes menores',
-    precio: 159000,
+    precio: 176900,
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const articulosDuster = [
     descripcion1: 'Cámara adaptada para vincular a MediaNav.',
     descripcion2: 'Línea de guía.',
     descripcion3: 'Brillo adaptable.',
-    precio: 131100,
+    precio: 139800,
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ const articulosDuster = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 174500,
+    precio: 192900,
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ const articulosDuster = [
     descripcion1: 'Kit 4 tornillos de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Fácil colocación.',
-    precio: 52900,
+    precio: 59700,
   },
   {
     id: 11,
@@ -105,7 +105,7 @@ const articulosDuster = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 71300,
+    precio: 83500,
   }
 ]
 const articulosKangoo = [
@@ -116,7 +116,7 @@ const articulosKangoo = [
     descripcion1: 'Cubre totalmente el techo.',
     descripcion2: 'Pintados negro con poliéster en polvo.',
     descripcion3: 'Peso máximo soportado 90 Kg.',
-    precio: 830400,
+    precio: 962600,
   },
   {
     id: 2,
@@ -125,7 +125,7 @@ const articulosKangoo = [
     descripcion1: 'Plegable.',
     descripcion2: 'Baulera guardaobjetos.',
     descripcion3: 'Parte superior acolchada.',
-    precio: 321800,
+    precio: 369800,
   },
   {
     id: 3,
@@ -134,7 +134,7 @@ const articulosKangoo = [
     descripcion1: 'Cámara adaptada para vincular a MediaNav.',
     descripcion2: 'Línea de guía.',
     descripcion3: 'Brillo adaptable.',
-    precio: 131100,
+    precio: 139900,
   },
   {
     id: 4,
@@ -143,7 +143,7 @@ const articulosKangoo = [
     descripcion1: 'Ancho 15.25 Cm.',
     descripcion2: 'Diámetro de la llanta 15 pulgadas.',
     descripcion3: 'Material Aleación de aluminio.',
-    precio: 488500,
+    precio: 587700,
   },
   {
     id: 5,
@@ -152,7 +152,7 @@ const articulosKangoo = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 174500,
+    precio: 192900,
   },
   {
     id: 6,
@@ -161,7 +161,7 @@ const articulosKangoo = [
     descripcion1: 'Kit 4 tornillos de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Facil colocación.',
-    precio: 52900,
+    precio: 59700,
   },
   {
     id: 7,
@@ -170,7 +170,7 @@ const articulosKangoo = [
     descripcion1: 'Bastidor de caño 40×40 x3,2 de espesor y caños de 5/8 curvados.',
     descripcion2: 'Pintados negro con poliéster en polvo.',
     descripcion3: 'Anclaje totalmente al chasis.',
-    precio: 228800,
+    precio: 247400,
   },
   {
     id: 8,
@@ -179,7 +179,7 @@ const articulosKangoo = [
     descripcion1: 'Caño de 1 pulgada x 1.6 de pared, las rejillas de 5/8 x 1.6.',
     descripcion2: 'Pintado negro con poliéster en polvo.',
     descripcion3: 'Anclajes directamente a los orificios de techo originales',
-    precio: 258000,
+    precio: 962600,
   },
   {
     id: 9,
@@ -188,7 +188,7 @@ const articulosKangoo = [
     descripcion1: 'Construidos en chapa acero al carbono 2 mm de espesor.',
     descripcion2: 'Otorga protección completa para el cárter del vehículo.',
     descripcion3: 'Pintados negro con poliéster en polvo.',
-    precio: 109200,
+    precio: 120500,
   },
   {
     id: 10,
@@ -197,7 +197,7 @@ const articulosKangoo = [
     descripcion1: 'Plástico termoformado resistente al sol y productos químicos.',
     descripcion2: 'Textura antideslizante de fácil limpieza.',
     descripcion3: 'Cubre piso furgón completo y alojamiento interior ruedas',
-    precio: 302100,
+    precio: 332700,
   },
   {
     id: 11,
@@ -215,7 +215,7 @@ const articulosKangoo = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 71300,
+    precio: 83500,
   }
 ]
 const articulosOroch = [
@@ -226,7 +226,7 @@ const articulosOroch = [
     descripcion1: 'Plástico termoformado resistente al sol y productos químicos.',
     descripcion2: 'Protege carrocería en caso de colisión menor.',
     descripcion3: 'Aspecto de robustez.',
-    precio: 320600,
+    precio: 366100,
   },
   {
     id: 2,
@@ -235,7 +235,7 @@ const articulosOroch = [
     descripcion1: 'Fabricadas en hierro reforzado.',
     descripcion2: 'Fácil colocación, no requiere hacer modificaciones en el vehículo.',
     descripcion3: 'Punteras plásticas en las barras para no dañar la carga.',
-    precio: 196200,
+    precio: 227200,
   },
   {
     id: 3,
@@ -244,7 +244,7 @@ const articulosOroch = [
     descripcion1: 'Compatible con lona marítima.',
     descripcion2: 'Ayuda a transportar cargas y objetos.',
     descripcion3: 'Cuenta con protector de luneta.',
-    precio: 680300,
+    precio: 786900,
   },
   {
     id: 4,
@@ -253,7 +253,7 @@ const articulosOroch = [
     descripcion1: 'Kit de barreros para las 4 ruedas.',
     descripcion2: 'Protege parte baja de vehículo de proyecciones de piedras.',
     descripcion3: 'Evita suciedad en carrocería por barro.',
-    precio: 110000,
+    precio: 124200,
   },
   {
     id: 5,
@@ -262,7 +262,7 @@ const articulosOroch = [
     descripcion1: 'Manija apertura con cable de acero.',
     descripcion2: 'Cierre con resorte.',
     descripcion3: 'Grampa de fijación con bulón oculto.',
-    precio: 423000,
+    precio: 490400,
   },
   {
     id: 6,
@@ -271,7 +271,7 @@ const articulosOroch = [
     descripcion1: 'Acrílico resistente',
     descripcion2: 'No permite formación de remolinos en interior del habitáculo.',
     descripcion3: 'Desvía entrada de aire protegiendo ocupantes.',
-    precio: 68800,
+    precio: 75900,
   },
   {
     id: 7,
@@ -280,7 +280,7 @@ const articulosOroch = [
     descripcion1: 'Perfil de aluminio estrusado con tratamiento anodizado natural.',
     descripcion2: 'Pisaderas antideslizantes y punteras de inyección plástica.',
     descripcion3: 'Fijados al chasis.',
-    precio: 458200,
+    precio: 529500,
   },
   {
     id: 8,
@@ -289,7 +289,7 @@ const articulosOroch = [
     descripcion1: 'Plegable.',
     descripcion2: 'Baulera guardaobjetos.',
     descripcion3: 'Parte superior acolchada.',
-    precio: 174700,
+    precio: 195500,
   },
   {
     id: 9,
@@ -298,7 +298,7 @@ const articulosOroch = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 174500,
+    precio: 192900,
   },
   {
     id: 10,
@@ -307,7 +307,7 @@ const articulosOroch = [
     descripcion1: 'Kit 4 tornillos de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Fácil colocación.',
-    precio: 47600,
+    precio: 54400,
   },
   {
     id: 11,
@@ -325,7 +325,7 @@ const articulosOroch = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 71300,
+    precio: 83500,
   },
   {
     id: 13,
@@ -334,7 +334,7 @@ const articulosOroch = [
     descripcion1: 'Cámara adaptada para vincular a MediaNav.',
     descripcion2: 'Línea de guía.',
     descripcion3: 'Brillo adaptable.',
-    precio: 131100,
+    precio: 139900,
   }
 ]
 const articulosSandero = [
@@ -345,7 +345,7 @@ const articulosSandero = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 174500,
+    precio: 192900,
   },
   {
     id: 2,
@@ -354,7 +354,7 @@ const articulosSandero = [
     descripcion1: 'Kit 4 tornillos de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Fácil colocación.',
-    precio: 52900,
+    precio: 59700,
   },
   {
     id: 3,
@@ -372,7 +372,7 @@ const articulosSandero = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 71300,
+    precio: 83500,
   },
   {
     id: 5,
@@ -381,7 +381,7 @@ const articulosSandero = [
     descripcion1: 'Construidos en chapa acero al carbono 2 mm de espesor.',
     descripcion2: 'Otorga protección completa para el cárter del vehículo.',
     descripcion3: 'Pintados negro con poliéster en polvo.',
-    precio: 82000,
+    precio: 90000,
   }
 ]
 const articulosStepway = [
@@ -392,7 +392,7 @@ const articulosStepway = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 174500,
+    precio: 192900,
   },
   {
     id: 2,
@@ -401,7 +401,7 @@ const articulosStepway = [
     descripcion1: 'Kit 4 tornillos de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Fácil colocación.',
-    precio: 52900,
+    precio: 59700,
   },
   {
     id: 3,
@@ -419,7 +419,7 @@ const articulosStepway = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 71300,
+    precio: 83500,
   },
   {
     id: 5,
@@ -428,7 +428,7 @@ const articulosStepway = [
     descripcion1: 'Construidos en chapa acero al carbono 2 mm de espesor.',
     descripcion2: 'Otorga protección completa para el cárter del vehículo.',
     descripcion3: 'Pintados negro con poliéster en polvo.',
-    precio: 82000,
+    precio: 90000,
   },
   {
     id: 6,
@@ -437,7 +437,7 @@ const articulosStepway = [
     descripcion1: 'Fabricadas en hierro reforzado.',
     descripcion2: 'Fácil colocación, no requiere hacer modificaciones en el vehículo.',
     descripcion3: 'Punteras plásticas en las barras para no dañar la carga.',
-    precio: 173200,
+    precio: 785200,
   }
 ]
 const articulosAlaskan = [
@@ -448,7 +448,7 @@ const articulosAlaskan = [
     descripcion1: 'Jaula negra caño tubular simple',
     descripcion2: 'Base para lona marítima.',
     descripcion3: 'Bulonería con tratamiento anticorrosión.',
-    precio: 472300,
+    precio: 543500,
   },
   {
     id: 2,
@@ -457,7 +457,7 @@ const articulosAlaskan = [
     descripcion1: 'Jaula cromada caño tubular simple.',
     descripcion2: 'Base para lona marítima.',
     descripcion3: 'Bulonería con tratamiento anticorrosión.',
-    precio: 655900,
+    precio: 758400,
   },
   {
     id: 3,
@@ -466,7 +466,7 @@ const articulosAlaskan = [
     descripcion1: 'Manija apertura con cable de acero.',
     descripcion2: 'Cierre con resorte.',
     descripcion3: 'Grampa de fijación con bulón oculto.',
-    precio: 263500,
+    precio: 306900,
   },
   {
     id: 4,
@@ -475,7 +475,7 @@ const articulosAlaskan = [
     descripcion1: 'Plástico termoformado resistente al sol y productos químicos.',
     descripcion2: 'Textura antideslizante de fácil limpieza.',
     descripcion3: 'Forma perfectamente adaptada a caja.',
-    precio: 303200,
+    precio: 335600,
   },
   {
     id: 5,
@@ -484,7 +484,7 @@ const articulosAlaskan = [
     descripcion1: 'Acrílico resistente',
     descripcion2: 'No permite formación de remolinos en interior del habitáculo.',
     descripcion3: 'Desvía entrada de aire protegiendo ocupantes.',
-    precio: 122800,
+    precio: 139200,
   },
   {
     id: 6,
@@ -493,7 +493,7 @@ const articulosAlaskan = [
     descripcion1: 'Evita la aspersión de arena, barro y piedras.',
     descripcion2: 'Incluye kit limpiador de superficie para adhesivo.',
     descripcion3: 'Reduce daños en caso de accidentes menores',
-    precio: 688700,
+    precio: 787700,
   },
   {
     id: 7,
@@ -502,7 +502,7 @@ const articulosAlaskan = [
     descripcion1: 'Plástico termoformado resistente al sol y productos químicos.',
     descripcion2: 'Protege carrocería  en caso de colisión menor.',
     descripcion3: 'Aspecto de robustez.',
-    precio: 348900,
+    precio: 403700,
   },
   {
     id: 8,
@@ -511,7 +511,7 @@ const articulosAlaskan = [
     descripcion1: 'Kit 4 tuercas de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Fácil  colocación.',
-    precio: 103700,
+    precio: 120000,
   },
   {
     id: 9,
@@ -529,7 +529,7 @@ const articulosAlaskan = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 174500,
+    precio: 192900,
   },
   {
     id: 11,
@@ -538,7 +538,7 @@ const articulosAlaskan = [
     descripcion1: 'Estructura de caño en una sola pieza acero inoxidable.',
     descripcion2: 'Terminación pulido espejo.',
     descripcion3: 'No sobrepasa la línea del paragolpes.',
-    precio: 315300,
+    precio: 345900,
   },
   {
     id: 12,
@@ -547,7 +547,7 @@ const articulosAlaskan = [
     descripcion1: 'Estructura de caño en una sola pieza.',
     descripcion2: 'Terminación pulido espejo.',
     descripcion3: 'No sobrepasa la línea del paragolpes.',
-    precio: 219000,
+    precio: 237200,
   },
   {
     id: 13,
@@ -556,7 +556,7 @@ const articulosAlaskan = [
     descripcion1: 'Bastidor de caño 60×60 x3,2 de espesor.',
     descripcion2: 'Pintados negro con poliéster en polvo.',
     descripcion3: 'Anclaje totalmente al chasis.',
-    precio: 297000,
+    precio: 325400,
   },
   {
     id: 14,
@@ -565,7 +565,7 @@ const articulosAlaskan = [
     descripcion1: 'Bastidor de caño 40×40 x3,2 de espesor.',
     descripcion2: 'Pintados negro con poliéster en polvo.',
     descripcion3: 'Anclaje totalmente al chasis.',
-    precio: 221400,
+    precio: 249300,
   },
   {
     id: 15,
@@ -574,7 +574,7 @@ const articulosAlaskan = [
     descripcion1: 'Tubos de acero inoxidable.',
     descripcion2: 'Terminación pulido espejo.',
     descripcion3: 'Bases para todo tipo de lona.',
-    precio: 518300,
+    precio: 573300,
   },
   {
     id: 16,
@@ -583,7 +583,7 @@ const articulosAlaskan = [
     descripcion1: 'Tubos de acero al carbono.',
     descripcion2: 'Pintada negra con poliéster en polvo.',
     descripcion3: 'Bases para todo tipo de lona.',
-    precio: 347000,
+    precio: 381400,
   },
   {
     id: 17,
@@ -592,7 +592,7 @@ const articulosAlaskan = [
     descripcion1: 'Tubos de acero inoxidable.',
     descripcion2: 'Terminación pulido espejo.',
     descripcion3: 'Bases para todo tipo de lona.',
-    precio: 401700,
+    precio: 442800,
   },
   {
     id: 18,
@@ -601,7 +601,7 @@ const articulosAlaskan = [
     descripcion1: 'Tubos de acero al carbono.',
     descripcion2: 'Pintada negra con poliéster en polvo.',
     descripcion3: 'Bases para todo tipo de lona.',
-    precio: 310700,
+    precio: 340700,
   },
   {
     id: 19,
@@ -610,7 +610,7 @@ const articulosAlaskan = [
     descripcion1: 'Jaula despiezada para fácil trasporte.',
     descripcion2: 'Tubos de acero al carbono.',
     descripcion3: 'Pintada negra con poliéster en polvo.',
-    precio: 397100,
+    precio: 437600,
   },
   {
     id: 20,
@@ -619,7 +619,7 @@ const articulosAlaskan = [
     descripcion1: 'Perfil de aluminio estrusado con tratamiento anodizado natural.',
     descripcion2: 'Pisaderas antideslizantes y punteras de inyección plástica.',
     descripcion3: 'Fijados al chasis.',
-    precio: 416800,
+    precio: 459600,
   },
   {
     id: 21,
@@ -628,7 +628,7 @@ const articulosAlaskan = [
     descripcion1: 'Componentes ensamblados y sellados con siliconas especiales.',
     descripcion2: 'Resistente a las inclemencias del tiempo.',
     descripcion3: 'Fácil de operar en el uso diario.',
-    precio: 783400,
+    precio: 926700,
   },
   {
     id: 22,
@@ -637,6 +637,6 @@ const articulosAlaskan = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 71300,
+    precio: 83500,
   }
 ]
