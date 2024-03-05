@@ -448,7 +448,7 @@ const articulosAlaskan = [
     descripcion1: 'Jaula negra caño tubular simple',
     descripcion2: 'Base para lona marítima.',
     descripcion3: 'Bulonería con tratamiento anticorrosión.',
-    precio: 543500,
+    precio: 619800,
   },
   {
     id: 2,
@@ -457,7 +457,7 @@ const articulosAlaskan = [
     descripcion1: 'Jaula cromada caño tubular simple.',
     descripcion2: 'Base para lona marítima.',
     descripcion3: 'Bulonería con tratamiento anticorrosión.',
-    precio: 758400,
+    precio: 861500,
   },
   {
     id: 3,
@@ -466,7 +466,7 @@ const articulosAlaskan = [
     descripcion1: 'Manija apertura con cable de acero.',
     descripcion2: 'Cierre con resorte.',
     descripcion3: 'Grampa de fijación con bulón oculto.',
-    precio: 306900,
+    precio: 321100,
   },
   {
     id: 4,
@@ -475,7 +475,7 @@ const articulosAlaskan = [
     descripcion1: 'Plástico termoformado resistente al sol y productos químicos.',
     descripcion2: 'Textura antideslizante de fácil limpieza.',
     descripcion3: 'Forma perfectamente adaptada a caja.',
-    precio: 335600,
+    precio: 346100,
   },
   {
     id: 5,
@@ -484,7 +484,7 @@ const articulosAlaskan = [
     descripcion1: 'Acrílico resistente',
     descripcion2: 'No permite formación de remolinos en interior del habitáculo.',
     descripcion3: 'Desvía entrada de aire protegiendo ocupantes.',
-    precio: 139200,
+    precio: 160700,
   },
   {
     id: 6,
@@ -493,7 +493,7 @@ const articulosAlaskan = [
     descripcion1: 'Evita la aspersión de arena, barro y piedras.',
     descripcion2: 'Incluye kit limpiador de superficie para adhesivo.',
     descripcion3: 'Reduce daños en caso de accidentes menores',
-    precio: 787700,
+    precio: 906300,
   },
   {
     id: 7,
@@ -502,7 +502,7 @@ const articulosAlaskan = [
     descripcion1: 'Plástico termoformado resistente al sol y productos químicos.',
     descripcion2: 'Protege carrocería  en caso de colisión menor.',
     descripcion3: 'Aspecto de robustez.',
-    precio: 403700,
+    precio: 460200,
   },
   {
     id: 8,
@@ -511,7 +511,7 @@ const articulosAlaskan = [
     descripcion1: 'Kit 4 tuercas de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Fácil  colocación.',
-    precio: 120000,
+    precio: 136200,
   },
   {
     id: 9,
@@ -520,7 +520,7 @@ const articulosAlaskan = [
     descripcion1: 'Polarizados comunes y de seguridad.',
     descripcion2: 'Laminas con tonalidad media y clara.',
     descripcion3: 'Bloquea rayos UV protegiendo a pasajeros e interiores.',
-    precio: 90100,
+    precio: 108800,
   },
   {
     id: 10,
@@ -529,7 +529,7 @@ const articulosAlaskan = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 192900,
+    precio: 227400,
   },
   {
     id: 11,
@@ -538,7 +538,7 @@ const articulosAlaskan = [
     descripcion1: 'Estructura de caño en una sola pieza acero inoxidable.',
     descripcion2: 'Terminación pulido espejo.',
     descripcion3: 'No sobrepasa la línea del paragolpes.',
-    precio: 345900,
+    precio: 363900,
   },
   {
     id: 12,
@@ -547,7 +547,7 @@ const articulosAlaskan = [
     descripcion1: 'Estructura de caño en una sola pieza.',
     descripcion2: 'Terminación pulido espejo.',
     descripcion3: 'No sobrepasa la línea del paragolpes.',
-    precio: 237200,
+    precio: 258200,
   },
   {
     id: 13,
@@ -556,7 +556,7 @@ const articulosAlaskan = [
     descripcion1: 'Bastidor de caño 60×60 x3,2 de espesor.',
     descripcion2: 'Pintados negro con poliéster en polvo.',
     descripcion3: 'Anclaje totalmente al chasis.',
-    precio: 325400,
+    precio: 343400,
   },
   {
     id: 14,
@@ -565,7 +565,7 @@ const articulosAlaskan = [
     descripcion1: 'Bastidor de caño 40×40 x3,2 de espesor.',
     descripcion2: 'Pintados negro con poliéster en polvo.',
     descripcion3: 'Anclaje totalmente al chasis.',
-    precio: 249300,
+    precio: 267300,
   },
   {
     id: 15,
@@ -574,7 +574,7 @@ const articulosAlaskan = [
     descripcion1: 'Tubos de acero inoxidable.',
     descripcion2: 'Terminación pulido espejo.',
     descripcion3: 'Bases para todo tipo de lona.',
-    precio: 573300,
+    precio: 591300,
   },
   {
     id: 16,
@@ -583,7 +583,7 @@ const articulosAlaskan = [
     descripcion1: 'Tubos de acero al carbono.',
     descripcion2: 'Pintada negra con poliéster en polvo.',
     descripcion3: 'Bases para todo tipo de lona.',
-    precio: 381400,
+    precio: 399400,
   },
   {
     id: 17,
@@ -592,7 +592,7 @@ const articulosAlaskan = [
     descripcion1: 'Tubos de acero inoxidable.',
     descripcion2: 'Terminación pulido espejo.',
     descripcion3: 'Bases para todo tipo de lona.',
-    precio: 442800,
+    precio: 460800,
   },
   {
     id: 18,
@@ -601,7 +601,7 @@ const articulosAlaskan = [
     descripcion1: 'Tubos de acero al carbono.',
     descripcion2: 'Pintada negra con poliéster en polvo.',
     descripcion3: 'Bases para todo tipo de lona.',
-    precio: 340700,
+    precio: 358700,
   },
   {
     id: 19,
@@ -619,7 +619,7 @@ const articulosAlaskan = [
     descripcion1: 'Perfil de aluminio estrusado con tratamiento anodizado natural.',
     descripcion2: 'Pisaderas antideslizantes y punteras de inyección plástica.',
     descripcion3: 'Fijados al chasis.',
-    precio: 459600,
+    precio: 477600,
   },
   {
     id: 21,
@@ -628,7 +628,7 @@ const articulosAlaskan = [
     descripcion1: 'Componentes ensamblados y sellados con siliconas especiales.',
     descripcion2: 'Resistente a las inclemencias del tiempo.',
     descripcion3: 'Fácil de operar en el uso diario.',
-    precio: 926700,
+    precio: 947700,
   },
   {
     id: 22,
@@ -637,6 +637,6 @@ const articulosAlaskan = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 83500,
+    precio: 93900,
   }
 ]
