@@ -345,7 +345,7 @@ const articulosSandero = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 192900,
+    precio: 227400,
   },
   {
     id: 2,
@@ -354,7 +354,7 @@ const articulosSandero = [
     descripcion1: 'Kit 4 tornillos de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Fácil colocación.',
-    precio: 59700,
+    precio: 54100,
   },
   {
     id: 3,
@@ -363,7 +363,7 @@ const articulosSandero = [
     descripcion1: 'Polarizados comunes y de seguridad.',
     descripcion2: 'Laminas con tonalidad media y clara.',
     descripcion3: 'Bloquea rayos UV protegiendo a pasajeros e interiores.',
-    precio: 90100,
+    precio: 108800,
   },
   {
     id: 4,
@@ -372,7 +372,7 @@ const articulosSandero = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 83500,
+    precio: 93900,
   },
   {
     id: 5,
@@ -392,7 +392,7 @@ const articulosStepway = [
     descripcion1: 'Alerta sonora al acercarse a un objeto.',
     descripcion2: 'Regulación de distancia de alerta.',
     descripcion3: 'Activa al colocar reversa.',
-    precio: 192900,
+    precio: 227400,
   },
   {
     id: 2,
@@ -401,7 +401,7 @@ const articulosStepway = [
     descripcion1: 'Kit 4 tornillos de seguridad con llave especial.',
     descripcion2: 'Evita la manipulación de llantas con herramientas convencionales.',
     descripcion3: 'Fácil colocación.',
-    precio: 59700,
+    precio: 54100,
   },
   {
     id: 3,
@@ -410,7 +410,7 @@ const articulosStepway = [
     descripcion1: 'Polarizados comunes y de seguridad.',
     descripcion2: 'Laminas con tonalidad media y clara.',
     descripcion3: 'Bloquea rayos UV protegiendo a pasajeros e interiores.',
-    precio: 90100,
+    precio: 108800,
   },
   {
     id: 4,
@@ -419,7 +419,7 @@ const articulosStepway = [
     descripcion1: 'Matafuego homologado 1kg polvo ABC.',
     descripcion2: 'Balizas reflectivas con base.',
     descripcion3: 'Botiquín.',
-    precio: 83500,
+    precio: 93900,
   },
   {
     id: 5,
@@ -428,7 +428,7 @@ const articulosStepway = [
     descripcion1: 'Construidos en chapa acero al carbono 2 mm de espesor.',
     descripcion2: 'Otorga protección completa para el cárter del vehículo.',
     descripcion3: 'Pintados negro con poliéster en polvo.',
-    precio: 90000,
+    precio: 95200,
   },
   {
     id: 6,
@@ -437,7 +437,7 @@ const articulosStepway = [
     descripcion1: 'Fabricadas en hierro reforzado.',
     descripcion2: 'Fácil colocación, no requiere hacer modificaciones en el vehículo.',
     descripcion3: 'Punteras plásticas en las barras para no dañar la carga.',
-    precio: 785200,
+    precio: 885400,
   }
 ]
 const articulosAlaskan = [
